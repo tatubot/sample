@@ -146,16 +146,35 @@ header ul a {
 
 /*mainブロック設定
 ---------------------------------------------------------------------------*/
-.Ice-red,.Ice-yellow{
+/* .Ice-red,.Ice-yellow{border: solid rgb(10, 222, 42);
 	width: 100vw;
     height: 100%;
     margin: auto;
-	border: solid;
+}
+.Ice-red img,.Ice-yellow img{
+	width: 100%
+}
+.Ice-red{
+	margin-top: -420px;
 }
 .Ice-yellow{
+	margin-top: -420px;
+}
+.Ice-wafers2{
 	margin-top: -500px;
 }
-
+.Ice-cone{
+	
+} */
+.Ice img{border: solid red;
+	margin-left: -120px;
+	max-width: 110vw;
+}
+.Ice{
+	width: 100vw;
+	height: 3000px;
+	overflow: hidden;
+}
 
 /*メニュー初期設定
 ---------------------------------------------------------------------------*/
@@ -255,8 +274,8 @@ header ul a {
 ---------------------------------------------------------------------------*/
 /*ボックス全体の設定*/
 #footermenu {
-	background: #333;	/*背景色*/
-	color: #999;		/*文字色*/
+	background: #d6d6d6;	/*背景色*/
+	color: #4c4c4c;		/*文字色*/
 	font-size: 0.7em;	/*文字サイズ*/
 	display: flex;		/*flexボックスを使う指定*/
 	justify-content: space-between;	/*並びかたの種類の指定*/
@@ -267,12 +286,12 @@ header ul a {
 /*ボックス内のリンクテキスト設定*/
 #footermenu a {
 	text-decoration: none;
-	color: #999;	/*文字色*/
+	color: #4c4c4c;	/*文字色*/
 }
 
 /*リンクテキストのマウスオン時*/
 #footermenu a:hover {
-	color: #ccc;	/*文字色*/
+	color: #4c4c4c;	/*文字色*/
 }
 
 /*ulタグ（メニューの列単位）*/
@@ -286,7 +305,7 @@ header ul a {
 /*title*/
 #footermenu .title {
 	font-weight: bold;		/*太字にする*/
-	color: #ccc;			/*文字色*/
+	color: #4c4c4c;			/*文字色*/
 	padding-bottom: 5px;	/*下に空けるスペース*/
 }
 
@@ -297,14 +316,14 @@ footer small {font-size: 100%;}
 
 footer {
 	font-size: 0.6em;		/*文字サイズ*/
-	background: #222;	/*背景色*/
-	color: #999;			/*文字色*/
+	background: #d6d6d6;	/*背景色*/
+	color: #4c4c4c;			/*文字色*/
 	text-align: center;		/*内容をセンタリング*/
 	padding: 20px;			/*ボックス内の余白*/
 }
 
 /*リンクテキスト*/
-footer a {color: #999;text-decoration: none;}
+footer a {color: #4c4c4c;text-decoration: none;}
 
 /*著作部分*/
 footer .pr {display: block;}
