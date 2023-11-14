@@ -37,7 +37,7 @@ body {
 	background-image: url(../images/bg-obj.png);
 	background-repeat: repeat-y;
 	background-size: cover;
-	color: #666;		/*全体の文字色*/
+	color: #1d1d1d;		/*全体の文字色*/
 	line-height: 2;		/*行間*/
 	overflow-x: hidden;
 }
@@ -71,7 +71,8 @@ section + section {
 /*リンクテキスト全般の設定
 ---------------------------------------------------------------------------*/
 a {
-	color: #666;	/*文字色*/
+	color: #1b175e;	/*文字色*/
+	text-decoration: none;
 	transition: 0.3s;
 }
 
@@ -120,7 +121,7 @@ header {
 	};
 
 /*ヘッダー内のリンクテキスト*/
-header a {
+header ul li a {
 	color: #fff;	/*文字色*/
 	text-decoration: none;	/*デフォルトで入る下線を非表示にする*/
 }
@@ -183,6 +184,14 @@ header ul a {
 #menubar.db {display: block;}
 #menubar.dn {display: none;}
 
+.p #menubar.db{display: flex; justify-content: space-around; padding: 20px;
+	background: rgba(255, 255, 255, 0.9);
+	margin: auto;		
+}
+.p #menubar.db h3 img{
+	margin-top: 20px;
+}
+
 
 /*小さな端末用の設定（開閉ブロック）
 ---------------------------------------------------------------------------*/
@@ -194,14 +203,14 @@ header ul a {
 	width: 100%;
 	height: 100%;
 	padding: 70px 0;	/*上下、左右へのブロック内の余白*/
-	background: rgba(0,0,0,0.9);		/*背景色。0,0,0は黒の事で0.9は色が90%出た状態の事。*/
+	background: rgba(255, 255, 255, 0.9);		/*背景色。0,0,0は黒の事で0.9は色が90%出た状態の事。*/
 	animation: animation1 0.2s both;	/*animation.cssの、animation1を実行する。0.2sは0.2秒の事。*/
 	text-align: center;	/*内容をセンタリング*/
 	color: #fff;		/*文字色*/
 }
 .s #menubar.db a {
 	display: block;
-	color: #fff;	/*リンクテキストの文字色*/
+	color: rgb(61, 61, 61)000;	/*リンクテキストの文字色*/
 }
 
 
@@ -223,7 +232,7 @@ header ul a {
 	display: flex;					/*flexボックスを使う指定*/
 	flex-direction: column;			/*子要素（３本バー）を縦並びにする*/
 	justify-content: space-between;	/*並びかたの種類の指定*/
-	background: rgba(0,0,0,0.5);	/*背景色*/
+	background: rgba(0, 0, 0, 0.5);	/*背景色*/
 	border-radius: 50%;				/*円形にする*/
 }
 
@@ -316,7 +325,7 @@ footer small {font-size: 100%;}
 
 footer {
 	font-size: 0.6em;		/*文字サイズ*/
-	background: #d6d6d6;	/*背景色*/
+	background: #dbdbdb;	/*背景色*/
 	color: #4c4c4c;			/*文字色*/
 	text-align: center;		/*内容をセンタリング*/
 	padding: 20px;			/*ボックス内の余白*/
@@ -738,7 +747,7 @@ ul.slick-dots li.slick-active button {
 	display: block;
 	text-decoration: none;
 	text-align: center;		/*中身をセンタリング*/
-	background: #efa900;	/*背景色*/
+	background: #1b175e;	/*背景色*/
 	color: #fff;			/*文字色*/
 	margin: 10px auto 0;	/*上、左右、下への、ボタンの外側に空けるスペース*/
 	border-radius: 5px;		/*角丸の指定*/
@@ -851,7 +860,7 @@ main {
 	margin: 0 0 10px;
 	font-weight: normal;	/*デフォルトの太字を標準にする*/
 	font-size: 1em;			/*文字サイズ*/
-	border: 1px solid #999;	/*枠線の幅、線種、色*/
+	border: 1px solid #1b175e;	/*枠線の幅、線種、色*/
 	border-radius: 30px;	/*角を丸くする指定。大きければ適当で構いません。*/
 }
 
@@ -859,6 +868,7 @@ main {
 /*メニュー
 ---------------------------------------------------------------------------*/
 /*メニューブロック*/
+
 ul.submenu {
 	margin-bottom: 10px !important;
 }
@@ -873,7 +883,6 @@ ul.submenu li a {
 ul.submenu:not(.btn) li a:hover {
 	background: #f0f0f0;
 }
-
 
 
 /*「お知らせ」ブロック

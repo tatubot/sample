@@ -1,22 +1,10 @@
-//タイマー
-$(function() {
-	var timer = false;
-	$(window).resize(function() {
-		if(timer !== false){
-			clearTimeout(timer);
-		}
-		timer = setTimeout(function() {
-		}, 500);
-	});
-});
-
 
 // menu
 $(window).on("load resize", function() {
 	setTimeout(function(){
 
 		var winW = window.innerWidth;
-		var winBP = 900;	//ブレイクポイント
+		var winBP = 703;	//ブレイクポイント
 
 			//小さな端末用
 			if(winW < winBP) {
