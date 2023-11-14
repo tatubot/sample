@@ -33,7 +33,7 @@ html,body {
 body {
 	font-family: "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
 	-webkit-text-size-adjust: none;
-	background: #1b175e;	/*背景色*/
+	background: #ffffff;	/*背景色*/
 	background-image: url(../images/bg-obj.png);
 	background-repeat: repeat-y;
 	background-size: cover;
@@ -66,6 +66,7 @@ ul, ol {margin-bottom: 30px;}
 section + section {
 	margin-top: 50px;
 }
+.title{width:300px;margin:100px auto 0 auto;padding:10px;background-color: #1b175e; color: #fff;}
 
 
 /*リンクテキスト全般の設定
@@ -147,26 +148,33 @@ header ul a {
 
 /*mainブロック設定
 ---------------------------------------------------------------------------*/
-/* .Ice-red,.Ice-yellow{border: solid rgb(10, 222, 42);
-	width: 100vw;
-    height: 100%;
+main h1{
+    margin-top: 120px;
+    text-align: center;
+}
+.textarea-1{
+    width: 75%;
+    height: 500px;
+    background: #ffffff79;    
+    padding: 80px;
+    resize: none;
     margin: auto;
+    position: absolute;
+    top: 700px;
+    left: 180px;
 }
-.Ice-red img,.Ice-yellow img{
-	width: 100%
+.textarea-2{
+    width: 75%;
+    height: 500px;
+    background: #ffffff79;    
+    padding: 80px;
+    resize: none;
+    margin: auto;
+    position: absolute;
+    top: 1830px;
+    left: 180px;
 }
-.Ice-red{
-	margin-top: -420px;
-}
-.Ice-yellow{
-	margin-top: -420px;
-}
-.Ice-wafers2{
-	margin-top: -500px;
-}
-.Ice-cone{
-	
-} */
+
 .Ice img{border: solid red;
 	margin-left: -120px;
 	max-width: 110vw;
@@ -176,6 +184,37 @@ header ul a {
 	height: 3000px;
 	overflow: hidden;
 }
+
+
+/* キャラクターページスタイル
+---------------------------------------------------------------------------*/
+.grid-container{
+    border:solid blueviolet;
+    background: rgba(255, 255, 255, 0.6);
+    margin: 100px auto;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 90%;
+    max-width: 1500px;
+    min-width: 300px;
+    justify-content: center;
+}
+.grid {border: #0048ff solid;
+    width: 150px;
+    height: 180px;
+    text-align: center;
+}
+.grid img{
+    max-width: 100%;
+    height: auto;
+}
+.grid h4{
+    margin-top: 0px;
+}
+
+
 
 /*メニュー初期設定
 ---------------------------------------------------------------------------*/
@@ -460,7 +499,7 @@ ul.slick-dots li.slick-active button {
 .menu {
 	padding: 0;
 	margin: 0 0 20px;
-	font-size: 0.8em;	/*文字サイズを80%に*/
+	font-size: 0.6em;	/*文字サイズを80%に*/
 }
 
 /*メニュー１個あたり*/
@@ -752,7 +791,7 @@ ul.slick-dots li.slick-active button {
 	margin: 10px auto 0;	/*上、左右、下への、ボタンの外側に空けるスペース*/
 	border-radius: 5px;		/*角丸の指定*/
 	max-width: 300px;		/*最大幅。これ以上広がらない。*/
-	padding: 5px;			/*ボタン内の余白*/
+	padding: 6px 10px;			/*ボタン内の余白*/
 }
 
 /*inputタグの場合*/
@@ -831,8 +870,8 @@ html, body {
 ---------------------------------------------------------------------------*/
 /*mainブロックの設定*/
 main {	
-	width: calc(100% - 230px);	/*ブロックの幅。230pxというのは、下で設定している#menubarの幅に30px分の余白を足した数字です。*/
-	order: 2;	/*mainと#menubarの左右の配置指定。数字が小さい方が先(左)にきます。*/
+	width:100vw;	/*ブロックの幅。230pxというのは、下で設定している#menubarの幅に30px分の余白を足した数字です。*/
+	
 }
 
 /*１カラム使用時*/
@@ -845,8 +884,7 @@ main {
 ---------------------------------------------------------------------------*/
 /*ブロック全体*/
 #menubar {
-	width: 200px;	/*ブロックの幅*/
-	order: 1;		/*mainと#menubarの左右の配置指定。数字が小さい方が先(左)にきます。*/
+	width: 100vw;	/*ブロックの幅*/
 	text-align: center;	/*テキストをセンタリング*/
 }
 
@@ -860,7 +898,6 @@ main {
 	margin: 0 0 10px;
 	font-weight: normal;	/*デフォルトの太字を標準にする*/
 	font-size: 1em;			/*文字サイズ*/
-	border: 1px solid #1b175e;	/*枠線の幅、線種、色*/
 	border-radius: 30px;	/*角を丸くする指定。大きければ適当で構いません。*/
 }
 
@@ -986,7 +1023,7 @@ ul.submenu:not(.btn) li a:hover {
 ---------------------------------------------------------------------------*/
 /*mainブロックの設定*/
 main {	
-	width: calc(100% - 330px);
+	width:100vw;
 }
 
 
@@ -994,9 +1031,7 @@ main {
 ---------------------------------------------------------------------------*/
 #menubar ul {margin: 0;display: block;}
 /*メニューブロック全体*/
-#menubar {
-	width: 300px;
-}
+
 
 
 /*　※注意！　下の閉じカッコ　}　はこのブロックに必要なので、削除しないで下さい。　*/
