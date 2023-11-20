@@ -174,23 +174,40 @@ main h1{
 }
 .textarea-1{
     width: 75%;
-    height: 500px;
-    background: #ffffff79;    
+    height: 700px;
+    background: rgba(255, 255, 255, 0.3);    
     padding: 80px;
     resize: none;
     margin: auto;
-    position: relative;
+    position: absolute;
+	top: 1400px;
+	left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     
 }
 .textarea-2{
     width: 75%;
-    height: 500px;
-    background: #ffffff79;    
+    height: 700px;
+    background: rgba(255, 255, 255, 0.3); 
     padding: 80px;
     resize: none;
     margin: auto;
-    position: relative;
+    position: absolute;
+	top: 2600px;
+	left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
 }
+@media screen and (max-width:1441px){.textarea-1{top:1300px}.textarea-2{top:2400px}}
+@media screen and (max-width:1024px){.textarea-1{top:900px;height: 450px;}.textarea-2{top:1700px;height: 450px;}}
+@media screen and (max-width:768px){.textarea-1{top:700px;height: 350px;}.textarea-2{top:1300px;height: 350px;}}
+@media screen and (max-width:426px){.textarea-1{top:420px;height: 200px;}.textarea-2{top:730px;height: 200px;}}
+@media screen and (max-width:400px){.textarea-1{top:380px;height: 200px;}.textarea-2{top:680px;height: 200px;}}
+@media screen and (max-width:376px){.textarea-1{top:360px;height: 180px;}.textarea-2{top:640px;height: 200px;}}
+@media screen and (max-width:321px){.textarea-1{top:300px;height: 150px;}.textarea-2{top:730px;height: 200px;}}
 
 /* アイスの背景ブロック */
 /* ----------------------------------------------------------------------- */
