@@ -41,6 +41,7 @@ body {
 	color: #1d1d1d;		/*全体の文字色*/
 	line-height: 2;		/*行間*/
 	overflow-x: hidden;
+	width: 100vw;
 	height: fit-content;
 }
 
@@ -88,8 +89,8 @@ a:hover {
 ---------------------------------------------------------------------------*/
 #container {
 	width: 100%;
-	height: 1000px;
-	border: solid red;
+	height: max-content;
+	 /* border: solid red;        ------------------------------------------------------------------- */
 	
 	/* margin: 5% 2%;		上下、左右に空ける余白 */
 }
@@ -178,9 +179,8 @@ main h1{
     padding: 80px;
     resize: none;
     margin: auto;
-    position: absolute;
-    top: 700px;
-    left: 180px;
+    position: relative;
+    
 }
 .textarea-2{
     width: 75%;
@@ -189,16 +189,15 @@ main h1{
     padding: 80px;
     resize: none;
     margin: auto;
-    position: absolute;
-    top: 1830px;
-    left: 180px;
+    position: relative;
 }
 
 /* アイスの背景ブロック */
 /* ----------------------------------------------------------------------- */
-.Ice img{border: solid blue;
+.Ice img{
+	/* border: solid blue;        ------------------------------------------------------------------- */
 	margin-left: -120px;
-	min-width: 110vw;
+	width: 110vw;
 }
 @media screen and (max-width:1440px){.Ice img{margin-left: -100px;}}
 @media screen and (max-width:1024px){.Ice img{margin-left: -80px;}}
@@ -208,9 +207,9 @@ main h1{
 
 
 .Ice{
-	border: solid gray;
+	/* border: solid gray;        ------------------------------------------------------------------- */
 	min-width: 110vw;
-	height: 3000px;
+	height: max-content;
 	overflow: hidden;
 }
 
@@ -230,7 +229,7 @@ main h1{
     min-width: 300px;
     justify-content: center;
 }
-.grid {border: #0048ff solid;
+.grid {border: #0048ff solid;        /* ------------------------------------------------------------------- */
     width: 150px;
     height: 180px;
     text-align: center;
@@ -245,7 +244,7 @@ main h1{
 
 /* ニュースページスタイル
 ---------------------------------------------------------------------------*/
-.news .grid {border: #0048ff solid;
+.news .grid {border: #0048ff solid;        /* ------------------------------------------------------------------- */
 	padding: 20px;
     height: auto;
 }
@@ -255,7 +254,7 @@ main h1{
 	justify-content:space-between;
 }
 .news .grid-img img{width: 100%;max-height: auto;}
-.news .grid-img{border: solid red;
+.news .grid-img{border: solid red;        /* ------------------------------------------------------------------- */
 	width: 250px;height: 200px;overflow: hidden;
 }
 .news .grid-case{
@@ -531,7 +530,7 @@ ul.slick-dots li.slick-active button {
 ---------------------------------------------------------------------------*/
 #mainimg {position: relative;}
 
-/*「毎日更新中」アイコン*/
+/*「ウエハース」アイコン*/
 .kazari {
 	position: absolute;
 	right: 2%;		/*mainimgブロックの右からの配置場所指定。*/
@@ -579,249 +578,6 @@ ul.slick-dots li.slick-active button {
 .menu li a:hover {
 	background: #fff;	/*マウスオン時の背景色*/
 }
-
-
-/*listブロック
----------------------------------------------------------------------------*/
-/*listブロック全体を囲むブロック*/
-.list-container {
-	display: flex;		/*flexボックスを使う指定*/
-	flex-wrap: wrap;	/*折り返す指定*/
-}
-
-/*１個あたりのボックス設定*/
-.list {
-	display: flex;				/*flexボックスを使う指定*/
-	flex-direction: column;		/*子要素を縦並びにする*/
-	justify-content: space-between;	/*並びかたの種類の指定*/
-	margin-bottom: 30px;	/*ボックス同士の上下間に空けるスペース*/
-	padding: 10px;			/*ボックス内の余白*/
-	background: #fff;		/*背景色*/
-	width: 48%;				/*幅*/
-	margin-right: 4%;		/*右側に空けるスペース*/
-	border: 1px solid #999;	/*枠線の幅、線種、色*/
-	border-radius: 10px;	/*角丸のサイズ*/
-	overflow: hidden;		/*飛び出る要素があれば非表示にする*/
-	position: relative;		/*子要素でabsolute(絶対配置)を使うための指定*/
-}
-
-/*２の倍数のlistブロックへの追加設定*/
-.list:nth-of-type(2n) {
-	margin-right: 0;	/*右側の余白をなくす*/
-}
-
-/*ボックス内のfigure画像*/
-.list figure {
-	margin: -10px -10px 0;	/*上の.listで設定しているpadding分を相殺して画像をブロックいっぱいに出す*/
-}
-
-/*ボックス内のh4タグ*/
-.list h4 {
-	margin: 0.5em 0 0;
-}
-/*ボックス内のtextブロック*/
-.list .text {
-	flex: 1;
-}
-
-/*ボックス内のpタグ*/
-.list p {
-	margin: 0;
-	font-size: 0.8em;	/*文字サイズを80%に*/
-	line-height: 1.5;	/*行間を少し狭くする*/
-}
-
-/*名前*/
-.list p.name {
-	text-align: right;	/*名前を右寄せする*/
-}
-.list p.name::before {
-	font-family: "Font Awesome 5 Free";	/*Font Awesomeを使う指定*/
-	content: "\f2bd";	/*Font Awesomeで読み込むアイコンの指定*/
-	padding-right: 5px;	/*アイコンと名前の間に空ける余白*/
-	color: #f67777;		/*アイコンの色*/
-}
-
-/*調理時間アイコン*/
-.list .icon {
-	width: 40px;		/*幅*/
-	height: 40px;		/*高さ*/
-	position: absolute;	/*親のrelativeに対して絶対配置させる指示*/
-	right: 3px;			/*listブロックに対して右からの配置場所の指定*/
-	top: 3px;			/*listブロックに対して上からの配置場所の指定*/
-}
-/*マウスオン時*/
-.list .icon a:hover {
-	opacity: 1;	/*デフォルトで半透明になるのを、しないように*/
-	filter: brightness(1.2);	/*明るくする*/
-}
-
-/*NEWアイコン、UPアイコン共通*/
-.list .newicon {
-	font-size: 10px;	/*文字サイズ*/
-	position: absolute;
-	right: 0px;			/*右からの配置場所指定*/
-	bottom: 0px;		/*下からの配置場所指定*/
-	width: 100px;		/*幅*/
-	height: 26px;		/*高さ*/
-	text-align: center;	/*テキストをセンタリング*/
-	transform: translate(40px) rotate(-45deg);	/*右に40px移動し、45度半時計回りに回転。*/
-}
-/*NEWアイコン*/
-.list .newicon {
-	background: #ff4343;	/*背景色*/
-	color: #fff;			/*文字色*/
-}
-/*UPアイコン*/
-.list .up {
-	background: #4385ff;	/*背景色*/
-	color: #fff;			/*文字色*/
-}
-
-
-/*レシピ詳細ページ（item.html）
----------------------------------------------------------------------------*/
-/*h3見出し*/
-.recipe-img h3 {
-	background: transparent;	/*背景色を透明にする*/
-}
-
-/*レシピページのメイン画像*/
-.recipe-img {
-	float: left;	/*左にまわりこみ*/
-	width: 30%;		/*ブロック幅*/
-}
-.recipe-img figure {
-	margin-bottom: 20px;	/*画像の下に空けるスペース*/
-	border-radius: 10px;	/*画像の角を丸くする設定*/
-	overflow: hidden;
-}
-
-/*レシピ文章ブロック*/
-.recipe {
-	float: right;	/*右にまわりこみ*/
-	width: 65%;		/*ブロック幅*/
-}
-
-/*レシピ文章の番号(ol)全体*/
-.recipe ol {
-	list-style-position: inside;
-	padding-left: 0;
-}
-
-/*１レシピあたりの設定*/
-.recipe ol li {
-	border: 1px solid #ccc;	/*枠線の幅、線種、色*/
-	margin-bottom: 20px;	/*番号ごとのブロックの下に空けるスペース*/
-	border-radius: 10px;	/*角丸のサイズ*/
-	text-indent: -1.3em;	/*テキストインデント。文字サイズを変更すると複数行になった場合の左側がずれるかもしれないので、その際に微調整して下さい。*/
-	padding: 15px 15px 15px 3em;	/*ボックス内の余白。上、右、下、左への順番。emは文字の単位。1emが1文字。*/
-}
-.recipe ol li::after {content: "";display: block;clear: both;}
-
-/*サムネイル画像*/
-.recipe ol li .thumb {
-	width: 200px;		/*幅*/
-	float: right;		/*右側にまわりこみ*/
-	margin-left: 10px;	/*左側に空けるスペース*/
-}
-
-/*ポイント用の文字ブロック*/
-.point {
-	display: block;
-	color: #ff4343;	/*文字色*/
-}
-.point::before {
-	font-family: "Font Awesome 5 Free";	/*Font Awesomeを使う指定*/
-	content: "\f0eb";	/*Font Awesomeで読み込むアイコンの指定*/
-	font-weight: bold;	/*この１行を削除すると、ラインタイプのアイコンに変わります*/
-	padding-right: 5px;	/*アイコンと名前の間に空ける余白*/
-}
-
-
-/*FAQ
----------------------------------------------------------------------------*/
-/*FAQボックス全体*/
-.faq {
-	padding: 0 5px;	/*上下、左右へのボックス内の余白*/
-}
-
-/*質問*/
-.faq dt {
-	border-radius: 3px;		/*枠を角丸にする指定*/
-	margin-bottom: 20px;	/*下に空けるスペース*/
-	text-indent: -2em;				/*テキストのインデント。質問が複数行になった際に、テキストの冒頭を揃える為に設定しています。*/
-	padding: 5px 1em 5px 3em;		/*ボックス内の余白。ここを変更する場合、上のtext-indentも調整します。*/
-	border: 1px solid #ccc;		/*枠線の幅、線種、色*/
-}
-
-/*アイコン（Font Awesome）*/
-.faq dt::before {
-	font-family: "Font Awesome 5 Free";	/*Font Awesomeを使う指定*/
-	content: "\f059";		/*使いたいアイコン名をここで指定。Font Awesomeに記載されています。詳しくは当テンプレートのマニュアルを読んで下さい。*/
-	color: #efa900;			/*アイコンの色*/
-	padding-right: 1em;		/*アイコンとテキストの間の余白*/
-}
-
-/*回答*/
-.faq dd {
-	padding: 5px 1em 30px 3em;		/*ボックス内の余白**/
-}
-
-/*opencloseを適用した要素のカーソル*/
-.openclose {
-	cursor: pointer;	/*カーソルの形状。リンクと同じスタイルにしてクリックできると認識してもらう。*/
-}
-
-.faq dt span {text-indent: 0;}
-
-
-/*テーブル
----------------------------------------------------------------------------*/
-/*テーブル１行目に入った見出し部分（※caption）*/
-.ta1 caption {
-	font-weight: bold;		/*太字に*/
-	padding: 10px 5px;		/*上下、左右へのボックス内の余白。基本的に数行下の「.ta1 th, .ta1 td」のpaddingと揃えておけばOKです。*/
-	border: 3px solid #efa900;	/*枠線の幅、線種、色*/
-	color: #efa900;			/*文字色*/
-	background: #fff;	/*背景色*/
-	font-size: 1.2em;		/*文字サイズ。親要素の1.2倍。*/
-	margin-bottom: 15px;	/*下に空けるスペース*/
-	border-radius: 5px;		/*角を丸くする指定*/
-}
-
-/*ta1テーブルブロック設定*/
-.ta1 {
-	border-top: 1px solid #ccc;	/*テーブルの一番上の線。幅、線種、色*/
-	width: 100%;
-	margin: 0 auto 30px;		/*最後の「30px」がテーブルの下に空けるスペースです*/
-}
-
-/*tr（１行分）タグ設定*/
-.ta1 tr {
-	border-bottom: 1px solid #ccc;	/*テーブルの下線。幅、線種、色*/
-}
-
-/*th（左側）、td（右側）の共通設定*/
-.ta1 th, .ta1 td {
-	padding: 10px 5px;		/*上下、左右へのボックス内の余白*。基本的に数行上の「.ta1 caption」のpaddingと揃えておけばOKです。*/
-	word-break: break-all;	/*英語などのテキストを改行で自動的に折り返す設定。これがないと、テーブルを突き抜けて表示される場合があります。*/
-}
-
-/*th（左側）のみの設定*/
-.ta1 th {
-	width: 30%;			/*幅*/
-	text-align: left;	/*左よせにする*/
-	background: #fafafa;
-}
-
-/*こだわりアイコンのフロート指定(CMS用)*/
-.ta1 td label {
-	float: left;
-	display: inline-block;
-	margin-right: 10px;
-}
-
 
 /*PAGE TOP（↑）設定
 ---------------------------------------------------------------------------*/
