@@ -26,12 +26,13 @@
 /*全体の設定
 ---------------------------------------------------------------------------*/
 html,body {
+	font-family: "Helvetica Neue",Helvetica;
 	margin: 0;padding: 0;
 	font-size: 13px;	/*基準となるフォントサイズ。下の方にある「画面幅900px以上」で基準を大きなサイズに再設定しています。*/
 }
 
 body {
-	font-family: "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
+	/* font-family: "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	フォント種類 */
 	-webkit-text-size-adjust: none;
 	background: #ffffff;	/*背景色*/
 	background-image: url(../images/bg-obj.png);
@@ -40,6 +41,7 @@ body {
 	color: #1d1d1d;		/*全体の文字色*/
 	line-height: 2;		/*行間*/
 	overflow-x: hidden;
+	height: fit-content;
 }
 
 /*リセット*/
@@ -86,18 +88,35 @@ a:hover {
 ---------------------------------------------------------------------------*/
 #container {
 	width: 100%;
+	height: 1000px;
 	border: solid red;
+	
 	/* margin: 5% 2%;		上下、左右に空ける余白 */
 }
+/* @media  screen and (max-width:320px) {#container{height: 70vh;overflow: hidden;}}
+@media  screen and (max-width:769px) {#container{height: 180vh;overflow: hidden;}}
+@media  screen and (max-width:680px) {#container{height: 150vh;overflow: hidden;}}
+@media  screen and (max-width:650px) {#container{height: 150vh;overflow: hidden;}}
+@media  screen and (max-width:600px) {#container{height: 130vh;overflow: hidden;}}
+@media  screen and (max-width:500px) {#container{height: 100vh;overflow: hidden;}}
+@media  screen and (max-width:470px) {#container{height: 100vh;overflow: hidden;}}
+@media  screen and (max-width:460px) {#container{height: 100vh;overflow: hidden;}}
+@media  screen and (max-width:450px) {#container{height: 100vh;overflow: hidden;}}
+@media  screen and (max-width:426px) {#container{height: 100vh;overflow: hidden;}}
+@media  screen and (max-width:400px) {#container{height: 90vh;overflow: hidden;}}
+@media  screen and (max-width:376px) {#container{height: 85vh;overflow: hidden;}}
+@media  screen and (max-width:350px) {#container{height: 80vh;overflow: hidden;}}
+@media  screen and (max-width:321px) {#container{height: 70vh;overflow: hidden;}} */
 
 
 /*headerブロック
 ---------------------------------------------------------------------------*/
 header {
 	width: 100%;
-	background: linear-gradient(45deg, #68C1FF8F, #F3FF688F, #FF68A38F);/*背景色*/
-	background-size: 1000% 1000%;
-	animation: GradientBackground 10s ease infinite;
+	/* background: linear-gradient(45deg, #68C1FF8F, #F3FF688F, #FF68A38F);背景色 */
+	background-color: #FFF; /*背景色*/
+	/* background-size: 1000% 1000%; */
+	/* animation: GradientBackground 10s ease infinite; */
 	color: #fff;		/*文字色*/
 	display: flex;		/*flexボックスを使う指定*/
 	justify-content: space-between;	/*並びかたの種類の指定*/
@@ -175,12 +194,22 @@ main h1{
     left: 180px;
 }
 
-.Ice img{border: solid red;
+/* アイスの背景ブロック */
+/* ----------------------------------------------------------------------- */
+.Ice img{border: solid blue;
 	margin-left: -120px;
-	max-width: 110vw;
+	min-width: 110vw;
 }
+@media screen and (max-width:1440px){.Ice img{margin-left: -100px;}}
+@media screen and (max-width:1024px){.Ice img{margin-left: -80px;}}
+@media screen and (max-width:768px){.Ice img{margin-left: -50px;}}
+@media screen and (max-width:426px){.Ice img{margin-left: -30px;}}
+@media screen and (max-width:320px){.Ice img{margin-left: -35px;}}
+
+
 .Ice{
-	width: 100vw;
+	border: solid gray;
+	min-width: 110vw;
 	height: 3000px;
 	overflow: hidden;
 }
@@ -234,6 +263,10 @@ main h1{
 	text-indent: 10px;
 	background-color: #666;
 	width: 250px;height: 200px;
+}
+
+.news .top{
+	
 }
 
 /*メニュー初期設定
@@ -444,10 +477,17 @@ footer .pr {display: block;}
 ---------------------------------------------------------------------------*/
 .mainimg {
 	position: relative;
-}
-.mainimg img {
-	border-radius: 0% 0% 40% 0% / 0% 0% 50% 0%;	/*角丸の指定。スラッシュより前半は水平方向、後半は垂直方向。それぞれ左上、右上、右下、左下の順番。*/
+	height: auto;
+	width: 100vw;
 	overflow: hidden;
+}
+@media screen and (max-width: 1440px) {#mainimg{margin-top: 50px;}}
+@media screen and (max-width: 1024px) {#mainimg{margin-top: 50px;}}
+@media screen and (min-width: 320px) {#mainimg{margin-top: 48px;}}
+.mainimg img {
+	/* border-radius: 0% 0% 40% 0% / 0% 0% 50% 0%;	角丸の指定。スラッシュより前半は水平方向、後半は垂直方向。それぞれ左上、右上、右下、左下の順番。 */
+	/* overflow: hidden; */
+	width: 100%;height: 100%;object-fit: cover;object-position: 0 0;
 }
 
 /*丸いページナビボタン全体を囲むブロック*/
@@ -481,7 +521,9 @@ ul.slick-dots li button {
 
 /*buttonのアクティブ時（現在表示されている画像を示すボタン）*/
 ul.slick-dots li.slick-active button {
-	background: #efa900;	/*色*/
+	background: linear-gradient(45deg, #68c0ff, #f2ff68, #FF68A3);	/*色*/
+	background-size: 1000% 1000%;
+	animation: GradientBackground 10s ease infinite;
 }
 
 
