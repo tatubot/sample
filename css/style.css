@@ -293,6 +293,38 @@ main h1{
 }
 .right img{width: 500px; height: 250px;
 }
+/* 個タレントページスタイル
+---------------------------------------------------------------------------*/
+.talent{
+	background: url(../images/talents/蜜羽はにぃ/蜜羽はにぃｰbg.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 100vw;
+}
+.talent .table{display: flex;padding-top: 100px}
+
+.talent .left-contents{
+	width: 50%;
+	height: fit-content;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #ffffff71;
+	backdrop-filter: blur(12px);
+	border-radius: 100px;
+	padding-bottom: 50px;
+}
+.talent .right-contents{
+	width: 40%;
+	height: 1000px;
+}
+.talent .right-contents img{height: 1000px; width: auto;object-fit: cover;}
+.talent .logo{width: 70%;margin: 0 auto;}
+.talent .name{margin-top: -30px;}
+.talent .jp{font-size: 1em;margin: 0;}
+.talent .kana{font-size: 0.5em;margin: 0;margin-top: 0px;}
+.talent .eng{font-size: 0.5em;margin: 0;margin-top: 0px;}
+.talent .text{text-align: left; width: 70%;margin: 0 auto;line-height: 1.4;}
+.talent .movie-case{border: double; width: 90%;margin: 0 auto;}
 /*メニュー初期設定
 ---------------------------------------------------------------------------*/
 #menubar ul {list-style: none;margin: 0;padding: 0;}
