@@ -284,7 +284,6 @@ main h1{
 
 .news .top,.news .bottom ,.news .left{display: flex;}
 
-.news .bottom{}
 
 .news .left,.news .right{margin: auto;}
 
@@ -293,38 +292,7 @@ main h1{
 }
 .right img{width: 500px; height: 250px;
 }
-/* 個タレントページスタイル
----------------------------------------------------------------------------*/
-.talent{
-	background: url(../images/talents/蜜羽はにぃ/蜜羽はにぃｰbg.png);
-	background-repeat: no-repeat;
-	background-size: contain;
-	width: 100vw;
-}
-.talent .table{display: flex;padding-top: 100px}
 
-.talent .left-contents{
-	width: 50%;
-	height: fit-content;
-	margin: 0 auto;
-	text-align: center;
-	background-color: #ffffff71;
-	backdrop-filter: blur(12px);
-	border-radius: 100px;
-	padding-bottom: 50px;
-}
-.talent .right-contents{
-	width: 40%;
-	height: 1000px;
-}
-.talent .right-contents img{height: 1000px; width: auto;object-fit: cover;}
-.talent .logo{width: 70%;margin: 0 auto;}
-.talent .name{margin-top: -30px;}
-.talent .jp{font-size: 1em;margin: 0;}
-.talent .kana{font-size: 0.5em;margin: 0;margin-top: 0px;}
-.talent .eng{font-size: 0.5em;margin: 0;margin-top: 0px;}
-.talent .text{text-align: left; width: 70%;margin: 0 auto;line-height: 1.4;}
-.talent .movie-case{border: double; width: 90%;margin: 0 auto;}
 /*メニュー初期設定
 ---------------------------------------------------------------------------*/
 #menubar ul {list-style: none;margin: 0;padding: 0;}
@@ -380,15 +348,15 @@ main h1{
 	display: flex;					/*flexボックスを使う指定*/
 	flex-direction: column;			/*子要素（３本バー）を縦並びにする*/
 	justify-content: space-between;	/*並びかたの種類の指定*/
-	background: rgba(0, 0, 0, 0.5);	/*背景色*/
-	border-radius: 50%;				/*円形にする*/
+	/* background: rgba(255, 255, 255, 0.5);	/*背景色*/
+	/* border-radius: 50%;				円形にする */ 
 }
 
 /*バー１本あたりの設定*/
 #menubar_hdr span {
 	display: block;
 	transition: 0.3s;	/*アニメーションにかける時間。0.3秒。*/
-	border-top: 2px solid #fff;	/*線の幅、線種、色*/
+	border-top: 2px solid #1b175e;	/*線の幅、線種、色*/
 }
 
 /*×印が出ている状態の設定。※１本目および２本目のバーの共通設定。*/
@@ -674,6 +642,7 @@ input[type="submit"].btn,
 input[type="button"].btn,
 input[type="reset"].btn {
 	-webkit-appearance: none;
+	appearance: none;
 	outline: none;
 	padding: 5px 20px;		/*上下、左右へのボックス内の余白*/
 	font-size: 130%;		/*文字サイズ*/
@@ -910,5 +879,4 @@ main {
 
 
 /*　※注意！　下の閉じカッコ　}　はこのブロックに必要なので、削除しないで下さい。　*/
-
 }
