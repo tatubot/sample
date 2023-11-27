@@ -231,33 +231,6 @@ main h1{
 }
 
 
-/* キャラクターページスタイル
----------------------------------------------------------------------------*/
-.grid-container{
-    border:solid blueviolet;
-    background: rgba(255, 255, 255, 0.6);
-    margin: 100px auto;
-    padding: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    width: 90%;
-    max-width: 1500px;
-    min-width: 300px;
-    justify-content: center;
-}
-.grid {border: #0048ff solid;        /* ------------------------------------------------------------------- */
-    width: 150px;
-    height: 180px;
-    text-align: center;
-}
-.grid img{
-    max-width: 100%;
-    height: auto;
-}
-.grid h4{
-    margin-top: 0px;
-}
 
 /* ニュースページスタイル
 ---------------------------------------------------------------------------*/

@@ -1,0 +1,35 @@
+@charaset "UTF-8";
+/* キャラクターページスタイル
+---------------------------------------------------------------------------*/
+.grid-container{
+    border:solid blueviolet;
+    background: rgba(255, 255, 255, 0.6);
+    margin: 100px auto;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 90%;
+    max-width: 1500px;
+    min-width: none;
+}
+.grid {
+    width: 150px;
+    height: 180px;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+.grid .img{
+    overflow: hidden;width: 150px; height: 150px;
+}
+.grid .img img{
+    width: 100%;
+    height: auto;
+}
+.grid h4{
+    margin-top: 0px;
+}
+
+.grid #FFCE6A{background-color: #FFCE6A;}
+.grid #FF9DB4{background-color: #FF9DB4;}
