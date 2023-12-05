@@ -1,8 +1,4 @@
 @charset "UTF-8";
-/* ニュースページスタイル
----------------------------------------------------------------------------*/
-.grid,.item02{backdrop-filter: blur(5px);}
-/* スライダー */
 #box{
     width: 100%;
     margin: 30px auto;
@@ -18,20 +14,18 @@
 .scroll_bar::-webkit-scrollbar{
     height: 10px;
     width: 8px;
- }
- .scroll_bar::-webkit-scrollbar-track{
+}
+.scroll_bar::-webkit-scrollbar-track{
     background-color: whitesmoke;
- }
- .scroll_bar::-webkit-scrollbar-thumb{
+}
+.scroll_bar::-webkit-scrollbar-thumb{
     background-color: #1b175e;
     border-radius: 50px;
- }
+}
 .item_imgbox02{
     width: 300px;
 }
-/* スライダーここまで */
 
-/* 770px以上 */
 @media screen and (min-width:770px) { 
     .news .grid {padding: 30px;height: auto;width: 50vw;flex-wrap: wrap;margin: 0 auto;}
     .img-case{width: 100%;height: auto;}
@@ -50,13 +44,12 @@
 }
 /* 769px以下 */
 @media screen and (max-width:769px){
-    .title{margin-bottom: 120px;}
-    
+    .title{margin-bottom: 30px;}
     .news .top, .news .bottom{width: 80vw;margin: -100px auto 0 auto}
     .news .subcontents{width: 100vw; display: flex; flex-wrap: wrap; justify-content: space-around;}
     .news .subgrid{width: 40vw;}
     .text-case h1{margin: 100px 0 -20px 0;padding: 0;  font-size: 100px;text-align: left;line-height: 1; letter-spacing: -5px;}
-    .subcontents h1{margin: 50px 0 -50px 0;}
+    .subcontents h1{font-size: 2.5rem; margin: 0px auto -50px 15px; text-align: left;}
 }
 /* 426px以下 */
 @media screen and (max-width:530px) {

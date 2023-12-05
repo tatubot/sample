@@ -56,22 +56,21 @@ table {border-collapse:collapse;}
 /*画像全般の設定*/
 img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
 
-/*videoタグ*/
-video {max-width: 100%;}
-
-/*iframeタグ*/
-iframe {width: 100%;}
-
-/*ul,olタグ*/
-ul, ol {margin-bottom: 30px;}
+/*pタグ*/
+p{font-size: 0.9rem; line-height: 17px !important;}
 
 /*他*/
 section + section {
 	margin-top: 50px;
 }
-.title{width:300px;margin:100px auto 0 auto;padding:10px;background-color: #1b175e; color: #fff;}
-@media screen and (max-width:1025px) {
-	.title{width: 150px; font-size: medium;}
+/* タイトル */
+.title{width: fit-content; font-size: 60px; text-align: center; font-weight: 50;letter-spacing: 20px;margin:100px auto 0 auto; color: #1b175e;}
+
+@media screen and (max-width: 910px) {
+	.title{margin-left:50px; font-size: 40px;}
+}
+@media screen and (max-width: 425px) {
+	.title{margin-left: 15px;}
 }
 
 /*リンクテキスト全般の設定
