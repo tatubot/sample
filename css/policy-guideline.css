@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body {
+    margin-top: 100px;
+    background-repeat: repeat-y;
+    background-size: contain;
+}
+
+.policy {
+    line-height: 17px;
+    width: 80%;
+    margin: auto;
+    padding: 5%;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: left;
+}
+@media screen and (max-width: 768px) {
+    .policy {
+        
+        width: 100%;
+    }
+}
+#center {
+    text-align: center;
+}
+
+h4 {
+    text-decoration: underline;
+}
+

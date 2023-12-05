@@ -70,7 +70,9 @@ section + section {
 	margin-top: 50px;
 }
 .title{width:300px;margin:100px auto 0 auto;padding:10px;background-color: #1b175e; color: #fff;}
-
+@media screen and (max-width:1025px) {
+	.title{width: 150px; font-size: medium;}
+}
 
 /*リンクテキスト全般の設定
 ---------------------------------------------------------------------------*/
@@ -172,8 +174,16 @@ main h1{
     margin-top: 120px;
     text-align: center;
 }
+
+.title-event{
+	z-index: 5;
+	position: absolute;
+	top: -26%;		/*mainimgブロックの右からの配置場所指定。*/
+	left: 35%;	/*mainimgブロックの下からの配置場所指定。*/
+	width: 30%;		/*画像の幅*/
+}
 .textarea-1{
-    width: 75%;
+    width: 95%;
     height: 700px;
     background: rgba(255, 255, 255, 0.3);    
     padding: 80px;
@@ -188,7 +198,7 @@ main h1{
     
 }
 .textarea-2{
-    width: 75%;
+    width: 100%;
     height: 700px;
     background: rgba(255, 255, 255, 0.3); 
     padding: 80px;
@@ -201,26 +211,52 @@ main h1{
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
 }
+.textarea-1 .case,.textarea-2 .case{
+	padding: 15%;
+	position: absolute;
+	top: -15%;
+	left: 0;
+}
+.textarea-1 .case h4,.textarea-2 .case h4{
+
+}
+.case{
+	width: 100%;
+}
+.inCase .mainimg{
+	width: 100%;
+}
+.textarea-1 .case p,.textarea-2 .case p{
+
+}
+.textarea-1 .case h4,.textarea-2 .case h4,.textarea-1 .case p,.textarea-2 .case p{
+	margin: 0;
+}
 @media screen and (max-width:1441px){.textarea-1{top:1300px}.textarea-2{top:2400px}}
 @media screen and (max-width:1024px){.textarea-1{top:900px;height: 450px;}.textarea-2{top:1700px;height: 450px;}}
 @media screen and (max-width:768px){.textarea-1{top:700px;height: 350px;}.textarea-2{top:1300px;height: 350px;}}
-@media screen and (max-width:426px){.textarea-1{top:420px;height: 200px;}.textarea-2{top:730px;height: 200px;}}
+@media screen and (max-width:431px){.textarea-1{top:410px;height: 200px;}.textarea-2{top:750px;height: 200px;}}
+@media screen and (max-width:426px){.textarea-1{top:420px;height: 200px;}.textarea-2{top:740px;height: 200px;}}
+@media screen and (max-width:412px){.textarea-1{top:395px;height: 200px;}.textarea-2{top:710px;height: 200px;}}
 @media screen and (max-width:400px){.textarea-1{top:380px;height: 200px;}.textarea-2{top:680px;height: 200px;}}
 @media screen and (max-width:376px){.textarea-1{top:360px;height: 180px;}.textarea-2{top:640px;height: 200px;}}
-@media screen and (max-width:321px){.textarea-1{top:300px;height: 150px;}.textarea-2{top:730px;height: 200px;}}
+@media screen and (max-width:321px){.textarea-1{top:325px;height: 150px;}.textarea-2{top:560px;height: 150px;}}
+@media screen and (max-width:280px){.textarea-1{top:280px;height: 150px;}.textarea-2{top:500px;height: 150px;}}
 
 /* アイスの背景ブロック */
 /* ----------------------------------------------------------------------- */
 .Ice img{
-	/* border: solid blue;        ------------------------------------------------------------------- */
+	/* border: solid blue; 
+	       ------------------------------------------------------------------- */
 	margin-left: -120px;
 	width: 110vw;
 }
 @media screen and (max-width:1440px){.Ice img{margin-left: -100px;}}
 @media screen and (max-width:1024px){.Ice img{margin-left: -80px;}}
 @media screen and (max-width:768px){.Ice img{margin-left: -50px;}}
+@media screen and (max-width:431px){.Ice img{margin-left: -33px;}}
 @media screen and (max-width:426px){.Ice img{margin-left: -30px;}}
-@media screen and (max-width:320px){.Ice img{margin-left: -35px;}}
+@media screen and (max-width:320px){.Ice img{margin-left: -20px;}}
 
 
 .Ice{
@@ -228,42 +264,6 @@ main h1{
 	min-width: 110vw;
 	height: max-content;
 	overflow: hidden;
-}
-
-
-
-/* ニュースページスタイル
----------------------------------------------------------------------------*/
-.news .grid {border: #0048ff solid;        /* ------------------------------------------------------------------- */
-	padding: 20px;
-    height: fit-content;
-}
-.news .grid{
-	width: 100%;
-	flex-wrap: wrap-reverse;
-	border: solid yellow;
-}
-.news .grid-img img{width: 100%;max-height: auto;}
-.news .grid-img{
-	width: 250px;height: 200px;overflow: hidden;
-}
-.news .grid-case{
-	text-align: left;
-	text-indent: 10px;
-	background-color: #666;
-	width: 250px;height: 200px;
-}
-.news .top,.news .bottom{width: fit-content;}
-
-.news .top,.news .bottom ,.news .left{display: flex;}
-
-
-.news .left,.news .right{margin: auto;}
-
-.news .right{border: solid red;
-	width: fit-content;max-height: auto ;
-}
-.right img{width: 500px; height: 250px;
 }
 
 /*メニュー初期設定
@@ -494,7 +494,7 @@ ul.slick-dots {
 	width: 100%;
 	text-align: center;
 	position: absolute;
-	bottom: 30px;	/*下からの配置場所指定*/
+	bottom: 10px;	/*下からの配置場所指定*/
 }
 
 /*丸いページナビボタン１個あたりの設定*/
@@ -509,18 +509,18 @@ ul.slick-dots li button {
 	border: none;padding: 0;
 	display: block;
 	text-indent: -9999px;	/*デフォルトで文字が出るので画面の外に追い出す指定*/
-	width: 12px;			/*ボタンの幅*/
-	height: 12px;			/*ボタンの高さ*/
+	width: 2vw;			/*ボタンの幅*/
+	height: 2vw;			/*ボタンの高さ*/
 	border-radius: 50%;		/*丸くする指定*/
 	cursor: pointer;		/*クリックで画像へジャンプするので、わかりやすいようhover時にpointerになるように。*/
-	background: #fff;		/*背景色。白。*/	
+	background: #ffffff54;		/*背景色。白。*/	
 }
 
 /*buttonのアクティブ時（現在表示されている画像を示すボタン）*/
 ul.slick-dots li.slick-active button {
 	background: linear-gradient(45deg, #68c0ff, #f2ff68, #FF68A3);	/*色*/
 	background-size: 1000% 1000%;
-	animation: GradientBackground 10s ease infinite;
+	animation: GradientBackground 5s ease infinite;
 }
 
 
@@ -603,13 +603,25 @@ ul.slick-dots li.slick-active button {
 	text-decoration: none;
 	text-align: center;		/*中身をセンタリング*/
 	background: #1b175e;	/*背景色*/
-	color: #fff;			/*文字色*/
+	color: #ffffff;			/*文字色*/
 	margin: 10px auto 0;	/*上、左右、下への、ボタンの外側に空けるスペース*/
 	border-radius: 5px;		/*角丸の指定*/
-	max-width: 300px;		/*最大幅。これ以上広がらない。*/
+	max-width: 200px;		/*最大幅。これ以上広がらない。*/
 	padding: 6px 10px;			/*ボタン内の余白*/
 }
 
+.btn-alt a{
+	display: block;
+	text-decoration: none;
+	text-align: center;		/*中身をセンタリング*/
+	background: #fff;	/*背景色*/
+	border: solid 1px #1b175e;
+	color: #1b175e;			/*文字色*/
+	margin: 10px auto 0;	/*上、左右、下への、ボタンの外側に空けるスペース*/
+	border-radius: 5px;		/*角丸の指定*/
+	max-width: 200px;		/*最大幅。これ以上広がらない。*/
+	padding: 6px 10px;			/*ボタン内の余白*/
+}
 /*inputタグの場合*/
 input[type="submit"].btn,
 input[type="button"].btn,
@@ -738,91 +750,6 @@ ul.submenu:not(.btn) li a:hover {
 	background: #f0f0f0;
 }
 
-
-/*「お知らせ」ブロック
----------------------------------------------------------------------------*/
-/*日付(dt)設定*/
-#new dt {
-	width: 14em;	/*幅。14文字(em)分。*/
-	display: flex;	/*flexボックスを使う指定*/
-	justify-content: space-between;	/*日付とアイコンをそれぞれ端に寄せる*/
-}
-
-/*日付の横のマーク（共通設定）*/
-#new dt span {
-	display: inline-block;	/*表示させる*/
-	width: 7.5em;			/*幅。7.5文字(em)分。*/
-	background: #b5b5b5;	/*背景色*/
-	color: #fff;			/*文字色*/
-	font-size: 0.8em;		/*文字サイズを80%に。*/
-	text-align: center;		/*文字をセンタリング*/
-	margin-right: 1em;		/*アイコンの右側に空けるスペース*/
-	align-self: flex-start;	/*高さを間延びさせない指定*/
-	line-height: 1.8;		/*行間を少し狭く*/
-	position: relative;top: 0.4em;	/*上下の配置バランスの微調整*/
-	border-radius: 30px;
-}
-
-/*icon-bg1設定。サンプルテンプレートでは「新作レシピ」と書いてあるマーク*/
-#new dt span.icon-bg1 {
-	background: #efa900;	/*背景色*/
-}
-
-/*icon-bg2設定。サンプルテンプレートでは「重要」と書いてあるマーク*/
-#new dt span.icon-bg2 {
-	background: #0048ff;	/*背景色*/
-}
-
-/*記事(dd)設定*/
-#new dd {
-	width: calc(100% - 14em);	/*「14em」は上の「#new dt」のwidthの値です。*/
-}
-
-
-/*listブロック
----------------------------------------------------------------------------*/
-/*１個あたりのボックス設定*/
-.list {
-	width: 24%;				/*幅*/
-	margin-right: 1.33%;	/*右側に空けるスペース*/
-}
-
-/*２の倍数のlistブロックへの追加設定。小さな端末用で0と指定しているので、改めて大きな端末用のマージンを指定。*/
-.list:nth-of-type(2n) {
-	margin-right: 1.33%;
-}
-
-/*４の倍数のlistブロックへの追加設定*/
-.list:nth-of-type(4n) {
-	margin-right: 0;	/*右側の余白をなくす*/
-}
-
-
-/*テーブル
----------------------------------------------------------------------------*/
-/*テーブル１行目に入った見出し部分（※caption）*/
-.ta1 caption {
-	padding: 5px 15px;		/*上下、左右へのボックス内の余白*/
-}
-
-/*th（左側）、td（右側）の共通設定*/
-.ta1 th, .ta1 td {
-	padding: 20px 15px;		/*上下、左右へのボックス内の余白*/
-}
-
-/*th（左側）のみの設定*/
-.ta1 th {
-	width: 20%;		/*幅*/
-}
-
-
-/*その他
----------------------------------------------------------------------------*/
-.ws {width: 48%;display: inline;}
-.sh {display: none;}
-
-
-/*　※注意！　下の閉じカッコ　}　はこのブロックに必要なので、削除しないで下さい。　*/
 
 }
 
