@@ -5,7 +5,7 @@
 
 .talent{
     /* 個別背景 */
-	/* 個別背景 */background: url(../images/talents/蜜羽はにぃ/蜜羽はにぃｰbg.png);
+	/* 個別背景background: url(../images/talents/蜜羽はにぃ/蜜羽はにぃｰbg.png); */
     /* 個別背景 */
 	background-repeat: no-repeat;background-size: contain;width: 100vw;
 }
@@ -16,8 +16,8 @@
 .talent .left-contents{width: 50%;height: fit-content;margin: 0 auto;text-align: center;background-color: #ffffff71;backdrop-filter: blur(12px);border-radius: 100px;padding-bottom: 50px;}
 .talent .logo{width: 70%;margin: 0 auto;}
 .talent .name{margin-top: -30px;}
-.talent .jp{font-size: 1em;margin: 0;}
-.talent .kana{font-size: 0.5em;margin: 0;margin-top: 0px;}
+.talent .jp{font-size: 1em;}
+.talent .kana{font-size: 0.5em;margin: 5px auto;margin-top: 0px;}
 .talent .eng{font-size: 0.5em;margin: 0;margin-top: 0px;}
 .talent .text{text-align: left; width: 90%;margin: 0 auto;line-height: 1.4;}
 .talent .movie-case{border: double; width: 90%;margin: 0 auto;margin-top: -60px;}
@@ -56,7 +56,7 @@ table td{text-align: left;padding:10px 10px 10px 30px;width: 15%;border-bottom: 
     .talent .logo{width: 70%;margin: 0 auto;}
     .talent .name{margin-top: -30px;}
     .talent .jp{font-size: 1em;margin: 0;}
-    .talent .kana{font-size: 0.5em;margin: 0;margin-top: 0px;}
+    .talent .kana{font-size: 0.5em;margin: 5px;}
     .talent .eng{font-size: 0.5em;margin: 0;margin-top: 0px;}
     .talent .text{text-align: left; width: 90%;margin: 0 auto;line-height: 1.4;}
     .talent .movie-case{margin-top: -70px;}
