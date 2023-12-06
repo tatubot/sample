@@ -2,6 +2,7 @@
 #box{
     width: 100%;
     margin: 30px auto;
+    background-color: #FFF;
     overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
 }

@@ -64,7 +64,7 @@ section + section {
 	margin-top: 50px;
 }
 /* タイトル */
-.title{width: fit-content; font-size: 60px; text-align: center; font-weight: 50;letter-spacing: 20px;margin:100px auto 0 auto; color: #1b175e;}
+.title{width: fit-content; font-size: 60px; text-align: center; font-weight: 50;letter-spacing: 10px;margin:100px auto 0 auto; color: #1b175e;}
 
 @media screen and (max-width: 910px) {
 	.title{margin-left:50px; font-size: 40px;}
@@ -605,11 +605,12 @@ ul.slick-dots li.slick-active button {
 	color: #ffffff;			/*文字色*/
 	margin: 10px auto 0;	/*上、左右、下への、ボタンの外側に空けるスペース*/
 	border-radius: 5px;		/*角丸の指定*/
-	max-width: 200px;		/*最大幅。これ以上広がらない。*/
-	padding: 6px 10px;			/*ボタン内の余白*/
+	width: 200px;		/*最大幅。これ以上広がらない。*/
+	padding: 4px 10px;			/*ボタン内の余白*/
 }
 
 .btn-alt a{
+	font-size: 10px;
 	display: block;
 	text-decoration: none;
 	text-align: center;		/*中身をセンタリング*/
@@ -618,8 +619,8 @@ ul.slick-dots li.slick-active button {
 	color: #1b175e;			/*文字色*/
 	margin: 10px auto 0;	/*上、左右、下への、ボタンの外側に空けるスペース*/
 	border-radius: 5px;		/*角丸の指定*/
-	max-width: 200px;		/*最大幅。これ以上広がらない。*/
-	padding: 6px 10px;			/*ボタン内の余白*/
+	width: 180px;		/*最大幅。これ以上広がらない。*/
+	padding: 4px 10px;			/*ボタン内の余白*/
 }
 /*inputタグの場合*/
 input[type="submit"].btn,
@@ -736,6 +737,7 @@ main {
 
 ul.submenu {
 	margin-bottom: 10px !important;
+	
 }
 
 /*メニュー１個あたりの設定*/
