@@ -169,105 +169,41 @@ header ul a {
 
 /*mainブロック設定
 ---------------------------------------------------------------------------*/
-main h1{
-    margin-top: 120px;
-    text-align: center;
-}
-
-.title-event{
-	z-index: 5;
-	position: absolute;
-	top: -26%;		/*mainimgブロックの右からの配置場所指定。*/
-	left: 35%;	/*mainimgブロックの下からの配置場所指定。*/
-	width: 30%;		/*画像の幅*/
-}
-.textarea-1{
-    width: 95%;
-    height: 700px;
-    background: rgba(255, 255, 255, 0.3);    
-    padding: 80px;
-    resize: none;
-    margin: auto;
-    position: absolute;
-	top: 1400px;
-	left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    
-}
-/* @media screen and (max-width:1000px){
-	.textarea-1,.textarea-2{}
-} */
-.textarea-2{
+.top .title{width: 20vw; }
+.top .title-news {width: 20vw; margin: 0 auto 0 150px; }
+.top .title-videos {width: 20vw; margin:0 150px 0 auto; }
+.top .news-area .contents {width: 100%;}
+.top .news-area .contents .img-case {width: 80%; margin: auto; }
+.top .news-area .background {background: url(../images/ICE-RED.png); background: url(../images/ICE-YELLOW.png); background-repeat: no-repeat; background-size: 30%;}
+/*mainブロック スクロール設定
+---------------------------------------------------------------------------*/
+#box{
     width: 100%;
-    height: 700px;
-    background: rgba(255, 255, 255, 0.3); 
-    padding: 80px;
-    resize: none;
-    margin: auto;
-    position: absolute;
-	top: 2600px;
-	left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
+    margin: 30px auto;
+    background-color: #FFF;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
 }
-.textarea-1 .case,.textarea-2 .case{
-	padding: 15%;
-	position: absolute;
-	top: -15%;
-	left: 0;
+.scroll_box{
+    width: 100vw;
+    display: flex;
+    gap: 30px;
+    padding: 20px;
 }
-.textarea-1 .case h4,.textarea-2 .case h4{
-
+.scroll_bar::-webkit-scrollbar{
+    height: 5px;
+    width: 8px;
 }
-.case{
-	width: 100%;
+.scroll_bar::-webkit-scrollbar-track{
+    background-color: whitesmoke;
 }
-.inCase .mainimg{
-	width: 100%;
+.scroll_bar::-webkit-scrollbar-thumb{
+    background-color: #1b175e;
+    border-radius: 50px;
 }
-.textarea-1 .case p,.textarea-2 .case p{
-
+.item_imgbox02{
+    width: 500px;
 }
-.textarea-1 .case h4,.textarea-2 .case h4,.textarea-1 .case p,.textarea-2 .case p{
-	margin: 0;
-}
-@media screen and (max-width:1441px){.textarea-1{top:1300px}.textarea-2{top:2400px}}
-@media screen and (max-width:1024px){.textarea-1{top:900px;height: 450px;}.textarea-2{top:1700px;height: 450px;}}
-@media screen and (max-width:768px){.textarea-1{top:700px;height: 350px;}.textarea-2{top:1300px;height: 350px;}}
-@media screen and (max-width:431px){.textarea-1{top:410px;height: 200px;}.textarea-2{top:750px;height: 200px;}}
-@media screen and (max-width:426px){.textarea-1{top:420px;height: 200px;}.textarea-2{top:740px;height: 200px;}}
-@media screen and (max-width:412px){.textarea-1{top:395px;height: 200px;}.textarea-2{top:710px;height: 200px;}}
-@media screen and (max-width:400px){.textarea-1{top:380px;height: 200px;}.textarea-2{top:680px;height: 200px;}}
-@media screen and (max-width:376px){.textarea-1{top:360px;height: 180px;}.textarea-2{top:640px;height: 200px;}}
-@media screen and (max-width:321px){.textarea-1{top:325px;height: 150px;}.textarea-2{top:560px;height: 150px;}}
-@media screen and (max-width:280px){.textarea-1{top:280px;height: 150px;}.textarea-2{top:500px;height: 150px;}}
-
-/* アイスの背景ブロック */
-/* ----------------------------------------------------------------------- */
-.Ice img{
-	/* border: solid blue; 
-	       ------------------------------------------------------------------- */
-	/* margin-left: -120px; */
-	/* width: 110vw; */
-}
-/* @media screen and (max-width:1440px){.Ice img{margin-left: -100px;}}
-@media screen and (max-width:1024px){.Ice img{margin-left: -80px;}}
-@media screen and (max-width:768px){.Ice img{margin-left: -50px;}}
-@media screen and (max-width:431px){.Ice img{margin-left: -33px;}}
-@media screen and (max-width:426px){.Ice img{margin-left: -30px;}}
-@media screen and (max-width:320px){.Ice img{margin-left: -20px;}} */
-
-
-.Ice{
-	/* border: solid gray;        ------------------------------------------------------------------- */
-	/* min-width: 110vw; */
-	height: max-content;
-	overflow: hidden;
-}
-
 /*メニュー初期設定
 ---------------------------------------------------------------------------*/
 #menubar ul {list-style: none;margin: 0;padding: 0;}
