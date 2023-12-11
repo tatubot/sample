@@ -2,7 +2,7 @@
 /* ニュースページスタイル
 ---------------------------------------------------------------------------*/
 .grid,.item02{backdrop-filter: blur(5px);}
-h3{margin: 0 0 -30px 0;}
+.news .link{margin: 0 0 -30px 0;}
 .text-case{background-color: rgb(255, 255, 255);}
 /* スライダー */
 #box{
@@ -38,7 +38,7 @@ h3{margin: 0 0 -30px 0;}
     .news .grid {padding: 30px;height: auto;width: 50vw;flex-wrap: wrap;margin: 0 auto;}
     .img-case{width: 100%;height: auto;}
     .img-case img{width: 100%;height: auto;}
-    .text-case{margin-top: -80px;}
+    .text-case{margin-top: -80px;padding-bottom: 20px;}
     .text-case p{font-size: 0.9em;line-height: 17px;width: 100%;height: auto;margin: 0;}
     .text-case h1{margin-bottom: 40px;text-wrap: nowrap;font-size: 100px;text-align: left;line-height: 0;letter-spacing: -5px;}
     .subcontents .text-case{margin-top: 0px;}
@@ -53,18 +53,20 @@ h3{margin: 0 0 -30px 0;}
 /* 769px以下 */
 @media screen and (max-width:769px){
     .title{margin-bottom: 120px;}
-    
-    .news .top, .news .bottom{width: 80vw;margin: -100px auto 0 auto}
+    .text-case{margin-top: 0;}
+    .news .top, .news .bottom{width: 90vw;margin: -100px auto 0 auto}
     .news .subcontents{width: 100vw; display: flex; flex-wrap: wrap; justify-content: space-around;}
     .news .subgrid{width: 40vw;}
-    .text-case h1{margin: 100px 0 -20px 0;padding: 0;  font-size: 100px;text-align: left;line-height: 1; letter-spacing: -5px;}
+    .text-case h1{ margin-bottom: -40px; padding-bottom: 20px;  font-size: 100px;text-align: left;line-height: 1; letter-spacing: -5px;}
+    
     .subcontents h1{margin: 50px 0 -50px 0;}
 }
 /* 426px以下 */
 @media screen and (max-width:530px) {
-    .text-case h1{font-size: 40px;}
+    .text-case h1{font-size: 80px;}
+
 }
 /* 321px以下 */
 @media screen and (max-width:321px) {
-    .text-case h1{font-size: 40px;}
+    .text-case h1{font-size: 80px;}
 }
