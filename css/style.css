@@ -155,8 +155,16 @@ header ul a {
 /*mainブロック設定
 ---------------------------------------------------------------------------*/
 .top .title{width: 20vw; margin: 0 auto;}
-.top .title-news {width: 20vw; margin:-20px 50px 0 auto;}
+
+	
+.top .title-news {width: 20vw; margin:-20px 50px 0 auto; border: solid;}
 .top .title-videos {width: 20vw; margin: -20px auto 0 50px;}
+
+@media screen and (max-width: 768px){
+	.top .title{width: 200px;}
+	.top .title-news{width: 200px; margin: auto;}
+	.top .title-videos{width: 200px; margin: auto;}
+}
 .top .news-area .contents {width: 100%; margin: auto}
 /* .top .news-area .contents:last-child{padding-bottom: 200px;} */
 .top .news-area .contents .img-case {width: 80%; margin: auto; }
@@ -248,7 +256,6 @@ scroll_right ｜右から出現
 }
 .item_imgbox02{
     width: 30vmax;
-	
 }
 
 .item_imgbox01{
