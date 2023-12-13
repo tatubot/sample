@@ -221,7 +221,9 @@ scroll_right ｜右から出現
 }
 /* ---------------------------------------------------------------------------*/ 
 /* スライダー */
-
+.top .scroll_box{
+	background-color: #00000000;
+}
 .scroll_box{
 	background-color: #fff;
     width: 100%;
