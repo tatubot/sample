@@ -1,16 +1,18 @@
 @charset "UTF-8";
 #box{
     width: 100%;
-    margin: 30px auto;
+    
     background-color: #FFF;
     overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
 }
 .scroll_box{
+    background-color: #FFF;
     width: 100vw;
     display: flex;
     gap: 30px;
     padding: 20px;
+    margin: 30px auto;
 }
 .scroll_bar::-webkit-scrollbar{
     height: 10px;
