@@ -4,7 +4,7 @@
 .grid-container{
     background: rgba(255, 255, 255, 0.6);
     margin: 30px auto 100px auto;
-    padding-left: 50px;
+    /* padding-left: 50px; */
     width: 90%;
     gap: 5px;
 
@@ -79,3 +79,15 @@
 @media screen and (max-width: 300px) {
     .grid-container{margin: auto;}
 }
+
+/* .talent{margin-left: 10%;} */
+.grid-container{justify-content: center}
+
+@media screen and (max-width: 624px) {
+    .grid-container .grid{width: 170px;}
+    .grid-container .grid .img{height: 170px;}
+}
+/* @media screen and (max-width: 534px) {
+    .grid-container .grid{width: 200px;}
+    .grid-container .grid .img{height: 200px;}
+} */

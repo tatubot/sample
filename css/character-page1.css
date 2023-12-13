@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+/* 個タレントページスタイル
+---------------------------------------------------------------------------*/
+
+.talent{
+    /* 個別背景 */
+	/* 個別背景background: url(../images/talents/蜜羽はにぃ/蜜羽はにぃｰbg.png); */
+    /* 個別背景 */
+	background-repeat: no-repeat;background-size: contain;width: 100vw;
+}
+.talent .table{display: flex;padding-top: 100px}
+
+/* 名前や説明のブロック */
+
+.talent .left-contents{width: 50%;height: fit-content;margin: 0 auto;text-align: center;background-color: #ffffff71;backdrop-filter: blur(12px);border-radius: 100px;padding-bottom: 50px;}
+.talent .logo{width: 70%;margin: 0 auto;}
+.talent .name{margin-top: -30px;}
+.talent .jp{font-size: 1em;}
+.talent .kana{font-size: 0.5em;margin: 5px auto;margin-top: 0px;}
+.talent .eng{font-size: 0.5em;margin: 0;margin-top: 0px;}
+.talent .text{text-align: left; width: 90%;margin: 0 auto;line-height: 1.4;}
+.talent .movie-case{border: double; width: 90%;margin: 0 auto;margin-top: -60px;}
+.talent .movie-title h1{font-size: 1.3rem; color: #1b175e; margin: 0 auto; margin-top: 0;text-align: left; width: 90%;}
+
+/* ビジュアル画像のブロック */
+
+.talent .right-contents{width: 40%;height: 100%;}
+.talent .right-contents img{height: 100%; width: auto;object-fit: cover;}
+
+/* テーブルのCSS */
+.data-table{background-color: #ffffff71;backdrop-filter: blur(12px); padding-bottom: 50px; margin-top: -100px;}
+.data-table-flextable{display: flex;justify-content: center;}
+table{width: 40%;height: fit-content; margin: 0 20px; display: block;box-shadow: #1b175e44 0px 4px 10px;}
+table th{position: relative;text-align: left;width: 15%;border-bottom: solid 0.5px;vertical-align: top;padding:10px 0 10px 30px;}
+table td{text-align: left;padding:10px 10px 10px 30px;width: 15%;border-bottom: solid 0.5px #1b175e; vertical-align: top;}
+
+/* ここからレスポンシブのCSS */
+
+@media screen and (max-width:700px) {
+    .talent{
+        background-size: 200%;
+    }
+    .talent .table{
+        flex-direction: column-reverse;
+    }
+    .talent .right-contents{
+        margin: 0 auto;
+        margin-top: -50px;
+        width: 60%;
+    }
+    .talent .left-contents{
+        width: 100%;
+        border-radius: 0;
+    }
+    .talent .logo{width: 70%;margin: 0 auto;}
+    .talent .name{margin-top: -30px;}
+    .talent .jp{font-size: 1em;margin: 0;}
+    .talent .kana{font-size: 0.5em;margin: 5px;}
+    .talent .eng{font-size: 0.5em;margin: 0;margin-top: 10px;}
+    .talent .text{text-align: left; width: 90%;margin: 0 auto;line-height: 1.4;}
+    .talent .movie-case{margin-top: -70px;}
+
+    /* テーブルのレスポンシブCSS */
+    .data-table-flextable{display: block;}
+    table{width: 90%; margin: 0 auto;}
+    .data-table-flextable :first-child{margin-bottom: 30px;}
+}
+
+@media screen and (max-width:426px) {
+    .talent .right-contents{
+        margin: 0 auto;
+        margin-top: -50px;
+        width: 80%;
+    }
+}

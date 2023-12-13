@@ -4,3 +4,9 @@
 	/* 個別背景 */background: url(../../images/talents/蜜羽はにぃ/蜜羽はにぃｰbg.png);
     /* 個別背景 */
 }
+
+@media screen and (max-width:700px){
+    .logo img{
+        margin-bottom: 30px;
+    }
+}

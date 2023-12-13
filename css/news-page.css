@@ -25,8 +25,7 @@
     background-color: whitesmoke;
  }
  .scroll_bar::-webkit-scrollbar-thumb{
-    background: linear-gradient(45deg, #68c0ff, #f2ff68, #FF68A3);	/*色*/
-	background-size: 100% 100%;
+    background-color: #1b175e;
     border-radius: 50px;
  }
 .item_imgbox02{

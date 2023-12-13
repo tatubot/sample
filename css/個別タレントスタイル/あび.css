@@ -4,3 +4,8 @@
 	/* 個別背景 */background: url(../../images/talents/あび/あび-bg.png);
     /* 個別背景 */
 }
+@media screen and (max-width:700px){
+    .logo img{
+        margin-bottom: 30px;
+    }
+}
