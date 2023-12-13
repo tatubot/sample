@@ -235,11 +235,17 @@ scroll_right ｜右から出現
     background-color: whitesmoke;
 }
 .scroll_box::-webkit-scrollbar-thumb{
-    background-color: #1b175e;
+    background: linear-gradient(45deg, #68c0ff, #f2ff68, #FF68A3);	/*色*/
+	background-size: 100% 100%;
     border-radius: 50px;
 }
 .item_imgbox02{
-    width: 400px;
+    width: 30vmax;
+	
+}
+
+.item_imgbox01{
+    width: 75vw;
 }
 
 /* スライダーここまで */
@@ -248,11 +254,13 @@ scroll_right ｜右から出現
 .item03{position: relative;
     width: 400px;height: 700px;
 	background-color: #1d1d1d;
+	overflow-y: hidden;
 }
+.chara_bg_01{background:#ffd149}
 
 .item03 p{color: #FFF; writing-mode: vertical-lr; font-size: 3rem; padding: 0; margin: 2px auto 0 15px;}
 
-.item03 .talent_img{position: absolute; top: -0px; right: 0; height: max-content;}
+.item03 .talent_img{position: absolute; top: 0px; right: 0; height: 680px}
 /*メニュー初期設定
 ---------------------------------------------------------------------------*/
 #menubar ul {list-style: none;margin: 0;padding: 0;}
