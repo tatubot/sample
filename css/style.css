@@ -63,6 +63,9 @@ p{font-size: 0.9rem; line-height: 17px !important;}
 section + section {
 	margin-top: 50px;
 }
+.news .title,.talent .title, .contact .title{
+	margin-top: 80px; font-size: 100px; font-weight: bolder; text-align: center;
+}
 
 @media screen and (max-width: 910px) {
 	.title{margin-left:50px; font-size: 40px;}
@@ -284,7 +287,7 @@ scroll_right ｜右から出現
 
 /*３本バーを囲むブロック*/
 #menubar_hdr {
-	position: fixed;z-index: 101;
+	position: fixed;z-index: 100000;
 	cursor: pointer;
 	left: 5px;			/*左からの配置場所指定*/
 	top: 2px;			/*上からの配置場所指定*/
@@ -752,4 +755,24 @@ main {
 
 
 /*　※注意！　下の閉じカッコ　}　はこのブロックに必要なので、削除しないで下さい。　*/
+}
+
+/*小さな端末用の設定（開閉ブロック）
+---------------------------------------------------------------------------*/
+/*メニューブロック設定*/
+
+.s #menubar.db {
+	position: fixed;overflow: auto;z-index: 100;
+	left: 0px;top: 0px;
+	width: 100%;
+	height: 100%;
+	padding: 70px 0;	/*上下、左右へのブロック内の余白*/
+	background: rgba(255, 255, 255, 0.9);		/*背景色。0,0,0は黒の事で0.9は色が90%出た状態の事。*/
+	animation: animation1 0.2s both;	/*animation.cssの、animation1を実行する。0.2sは0.2秒の事。*/
+	text-align: center;	/*内容をセンタリング*/
+	color: #fff;		/*文字色*/
+}
+.s #menubar.db a {
+	display: block;
+	color: rgb(61, 61, 61)000;	/*リンクテキストの文字色*/
 }
