@@ -63,12 +63,12 @@ p{font-size: 0.9rem; line-height: 17px !important;}
 section + section {
 	margin-top: 50px;
 }
-.news .title,.talent .title, .contact .title{
-	margin-top: 80px; font-size: 100px; font-weight: bolder; text-align: center;
-}
+.news .title,.talent .title, .contact .title{margin-top: 80px; font-size: 100px; font-weight: bolder; text-align: center; }
+.event .title{font-size: 100px; font-weight: bolder; text-align: center; }
 
 @media screen and (max-width: 910px) {
 	.title{margin-left:50px; font-size: 40px;}
+	.news .title,.talent .title, .contact .title, .event .title{font-size: 50px; text-align: left;}
 }
 @media screen and (max-width: 425px) {
 	.title{margin-left: 15px;}
