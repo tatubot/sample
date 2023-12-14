@@ -67,7 +67,7 @@ section + section {
 .event .title{font-size: 100px; font-weight: bolder; text-align: center; }
 
 @media screen and (max-width: 910px) {
-	.title{margin-left:50px; font-size: 40px;}
+	.title{margin-left:50px; margin-top: 0; font-size: 40px;}
 	.news .title,.talent .title, .contact .title, .event .title{font-size: 50px; text-align: left;}
 }
 @media screen and (max-width: 425px) {
@@ -165,16 +165,22 @@ header ul a {
 	.top .title{width: 30vw; margin: 0px auto -60px 10px;}
 	.top .title-news{width: 30vw; margin: -80px 10px -50px auto;}
 	.top .title-videos{width: 30vw; margin: -80px auto -50px 10px;}
-	.top .title-talent {width: 30vw; margin: -20px auto -30px 10px;}
+	.top .title-talent {width: 30vw; margin: -80px auto -30px 10px;}
 }
 .top .news-area .contents {width: 100%; margin: auto}
 /* .top .news-area .contents:last-child{padding-bottom: 200px;} */
 .top .news-area .contents .img-case {width: 80%; margin: auto; }
 .top .background { 
 	width: 100%; 
-	background: url(../images/ICE-RED.png), url(../images/ICE-YELLOW.png); 
+	background: url(../images/ice-pink.png), url(../images/ICE-YELLOW.png); 
 	background-repeat: no-repeat; 
-	background-size: 50%; background-position: left top, right bottom;
+	background-size: 50%; background-position: -250px top, right bottom;
+}
+@media  screen and (max-width: 768px){
+	.top .background{background-size: 100%; background-position: -250px top, 100px bottom;}  
+}
+@media  screen and (max-width: 426px){
+	.top .background{background-size: 200px; background-position: -50px 100px, right 300px;}  
 }
 /* mainブロック スクロール設定 */
 
@@ -276,7 +282,8 @@ scroll_right ｜右から出現
 
 .item03 p{color: #FFF; writing-mode: vertical-lr; font-size: 3rem; padding: 0; margin: 2px auto 0 15px;}
 
-.item03 .talent_img{position: absolute; top: 0px; right: 0; height: 680px}
+.item03 .talent_img{position: absolute; top: 0px; right: 0; height: 100%}
+.talent_img img{object-fit: cover; height: 100%;}
 
 @media screen and (max-width:768px) {
 	.talent_box{padding: 10px;}
@@ -284,8 +291,17 @@ scroll_right ｜右から出現
 	.item03{
 		width: 100px;height: 180px;
 	}
-	
 }
+
+.chara_bg_01{background-color:#FFCE6A;}
+.chara_bg_02{background-color:#D83839;}
+.chara_bg_03{background-color:#946ABB}
+.chara_bg_04{background-color:#DCF3F8;}
+.chara_bg_05{background-color:#9EE478;}
+.chara_bg_06{background-color:#BDD3D6;}
+.chara_bg_07{background-color:#AB4AB4;}
+.chara_bg_08{background-color:#FF9BFF;}
+.chara_bg_09{background-color:#DACBC2;}
 /*メニュー初期設定
 ---------------------------------------------------------------------------*/
 #menubar ul {list-style: none;margin: 0;padding: 0;}
