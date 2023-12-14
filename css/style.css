@@ -157,15 +157,18 @@ header ul a {
 .top .title{width: 20vw; margin: 0 auto;}
 
 	
-.top .title-news {width: 20vw; margin:-20px 50px -80px auto;}
+/* .top .title-news {width: 20vw; margin:-20px 50px -80px auto;}
 .top .title-videos {width: 20vw; margin: -20px auto -80px 50px;}
-.top .title-talent {width: 20vw; margin: -20px auto -50px 50px;}
+.top .title-talent {width: 20vw; margin: -20px auto -50px 50px;} */
+.top .title-news {width: 20vw; margin:auto;margin-bottom: -30px;}
+.top .title-videos {width: 20vw; margin:auto;margin-bottom: -30px;}
+.top .title-talent {width: 20vw; margin:auto;margin-bottom: -30px;}
 
 @media screen and (max-width: 768px){
-	.top .title{width: 30vw; margin: 0px auto -60px 10px;}
-	.top .title-news{width: 30vw; margin: -80px 10px -50px auto;}
-	.top .title-videos{width: 30vw; margin: -80px auto -50px 10px;}
-	.top .title-talent {width: 30vw; margin: -80px auto -30px 10px;}
+	.top .title{width: 30vw;}
+	.top .title-news{width: 30vw;margin-top: -80px;}
+	.top .title-videos{width: 30vw;margin-top: -80px;}
+	.top .title-talent {width: 30vw;margin-top: -80px;}
 }
 .top .news-area .contents {width: 100%; margin: auto}
 /* .top .news-area .contents:last-child{padding-bottom: 200px;} */

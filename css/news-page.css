@@ -54,19 +54,19 @@
 @media screen and (max-width:769px){
     .title{margin-bottom: 120px;}
     .text-case{margin-top: 0;}
-    .news .top, .news .bottom{width: 90vw;margin: -100px auto 0 auto}
+    .news .top, .news .bottom{width: 90vw;margin: 0px auto 0 auto}
     .news .subcontents{width: 100vw; display: flex; flex-wrap: wrap; justify-content: space-around;}
     .news .subgrid{width: 40vw;}
-    .text-case h1{ margin-bottom: -40px; padding-bottom: 20px;  font-size: 100px;text-align: left;line-height: 1; letter-spacing: -5px;}
+    .text-case h1{ margin-bottom: -40px; padding-bottom: 40px;  font-size: 60px;text-align: left;line-height: 1; letter-spacing: -5px;}
     
-    .subcontents h1{margin: 50px 0 -50px 0;}
+    .subcontents h1{margin: 50px 0 -20px 0;}
 }
 /* 426px以下 */
 @media screen and (max-width:530px) {
-    .text-case h1{font-size: 80px;}
+    .text-case h1{font-size: 40px;}
 
 }
 /* 321px以下 */
 @media screen and (max-width:321px) {
-    .text-case h1{font-size: 80px;}
+    .text-case h1{font-size: 40px;}
 }

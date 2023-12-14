@@ -32,3 +32,12 @@
     .event .subcontents{width: 80vw; display: flex; flex-wrap: wrap; justify-content: space-around;margin: 30px auto 0 auto;}
     .event .subgrid{width: 20vw; padding: 10px;}
 }
+
+.bold{
+    font-weight: bold;
+}
+
+.event .img-case{
+    margin-bottom: 100px;
+    margin-top: -50px;
+}
