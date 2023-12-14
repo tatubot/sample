@@ -157,13 +157,15 @@ header ul a {
 .top .title{width: 20vw; margin: 0 auto;}
 
 	
-.top .title-news {width: 20vw; margin:-20px 50px 0 auto; border: solid;}
-.top .title-videos {width: 20vw; margin: -20px auto 0 50px;}
+.top .title-news {width: 20vw; margin:-20px 50px -80px auto;}
+.top .title-videos {width: 20vw; margin: -20px auto -80px 50px;}
+.top .title-talent {width: 20vw; margin: -20px auto -50px 50px;}
 
 @media screen and (max-width: 768px){
-	.top .title{width: 200px;}
-	.top .title-news{width: 200px; margin: auto;}
-	.top .title-videos{width: 200px; margin: auto;}
+	.top .title{width: 30vw; margin: 0px auto -60px 10px;}
+	.top .title-news{width: 30vw; margin: -80px 10px -50px auto;}
+	.top .title-videos{width: 30vw; margin: -80px auto -50px 10px;}
+	.top .title-talent {width: 30vw; margin: -20px auto -30px 10px;}
 }
 .top .news-area .contents {width: 100%; margin: auto}
 /* .top .news-area .contents:last-child{padding-bottom: 200px;} */
@@ -275,6 +277,15 @@ scroll_right ｜右から出現
 .item03 p{color: #FFF; writing-mode: vertical-lr; font-size: 3rem; padding: 0; margin: 2px auto 0 15px;}
 
 .item03 .talent_img{position: absolute; top: 0px; right: 0; height: 680px}
+
+@media screen and (max-width:768px) {
+	.talent_box{padding: 10px;}
+	.item03 p{font-size: 1rem; margin: 0;}
+	.item03{
+		width: 100px;height: 180px;
+	}
+	
+}
 /*メニュー初期設定
 ---------------------------------------------------------------------------*/
 #menubar ul {list-style: none;margin: 0;padding: 0;}
@@ -412,50 +423,6 @@ footer a {color: #4c4c4c;text-decoration: none;}
 
 /*著作部分*/
 footer .pr {display: block;}
-
-
-/*「お知らせ」ブロック
----------------------------------------------------------------------------*/
-/*お知らせブロック*/
-#new {
-	margin: 0;
-	display: flex;		/*flexボックスを使う指定*/
-	flex-wrap: wrap;	/*折り返す指定*/
-	padding: 0 20px;	/*上下、左右へのボックス内の余白*/
-}
-
-/*日付(dt)、記事(dd)共通設定*/
-#new dt,
-#new dd {
-	padding: 5px 0;		/*上下、左右へのボックス内の余白*/
-}
-
-/*日付(dt)設定*/
-#new dt {
-	width: 8em;	/*幅。8文字(em)分。※下の「900px以上」の端末用の設定に再設定があります。*/
-}
-
-/*日付の横のマーク（共通設定）*/
-#new dt span {
-	display: none;	/*小さな端末では非表示にしておく。*/
-}
-
-/*記事(dd)設定*/
-#new dd {
-	width: calc(100% - 8em);	/*「8em」は上の「#new dt」のwidthの値です。※下の「900px以上」の端末用の設定に再設定があります。*/
-}
-
-/*NEWアイコン*/
-#new .newicon {
-	display: inline-block;
-	background: #ff0000;	/*背景色*/
-	color: #fff;			/*文字色*/
-	font-size: 0.8em;		/*文字サイズ*/
-	line-height: 1;
-	padding: 3px 5px;		/*上下、左右へのアイコン内の余白*/
-	border-radius: 3px;		/*角を丸くする指定*/
-}
-
 
 /*スライドショー（slickを使用）
 ---------------------------------------------------------------------------*/
