@@ -52,16 +52,16 @@
 }
 /* 769px以下 */
 @media screen and (max-width:769px){
-    .title{margin-bottom: 120px;}
+    .title{margin-bottom: 0px;}
     .text-case{margin-top: 0;}
     .news .top, .news .bottom{width: 90vw;margin: 0px auto 0 auto}
     .news .subcontents{width: 100vw; display: flex; flex-wrap: wrap; justify-content: space-around;}
     .news .subgrid{width: 40vw;}
-    .text-case h1{ padding-bottom: 40px;  font-size: 60px;text-align: left;line-height: 1; letter-spacing: -5px;}
+    .text-case h1{ padding-bottom: 0px;  font-size: 60px;text-align: left;line-height: normal; letter-spacing: -5px;}
 }
 @media screen and (max-width:700px){
-.h1-collabo{margin: 10px 0 0px 0; border: solid; line-height: normal;}
-.h1-guest{margin: 0px 0 -0px 0; border: solid; line-height: normal;}
+.h1-collabo{margin: 10px 0 0px 0; line-height: normal;}
+.h1-guest{margin: 0px 0 -0px 0; line-height: normal;}
 .text-case h1{padding: 0; letter-spacing: -3px;}
 .scroll_box{margin: 0;}
 }
