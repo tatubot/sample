@@ -47,6 +47,9 @@
 }
 /* 769px以下 */
 @media screen and (max-width:769px){
+    .item_imgbox02{
+        width: 150px;
+    }
     .title{margin-bottom: 30px;}
     .news .top, .news .bottom{width: 80vw;margin: -100px auto 0 auto}
     .news .subcontents{width: 100vw; display: flex; flex-wrap: wrap; justify-content: space-around;}

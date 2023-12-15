@@ -64,7 +64,7 @@ section + section {
 	margin-top: 50px;
 }
 .news .title,.talent .title, .contact .title{margin-top: 80px; font-size: 100px; font-weight: bolder; text-align: center; }
-.event .title{font-size: 100px; font-weight: bolder; text-align: center; }
+
 
 @media screen and (max-width: 910px) {
 	.title{margin-left:50px; margin-top: 0; font-size: 40px;}
@@ -154,24 +154,24 @@ header ul a {
 
 /*mainブロック設定
 ---------------------------------------------------------------------------*/
+/* ウエハース */
 .top .title{width: 20vw; margin: 0 auto;}
-
-	
-/* .top .title-news {width: 20vw; margin:-20px 50px -80px auto;}
-.top .title-videos {width: 20vw; margin: -20px auto -80px 50px;}
-.top .title-talent {width: 20vw; margin: -20px auto -50px 50px;} */
-.top .title-news {width: 20vw; margin:auto;margin-bottom: -30px;}
+.top .title-news{width: 20vw; margin: auto;margin-bottom: -50px;}
+.top .title-collabo {width: 20vw; margin:auto;margin-bottom: -20px;}
 .top .title-videos {width: 20vw; margin:auto;margin-bottom: -30px;}
 .top .title-talent {width: 20vw; margin:auto;margin-bottom: -30px;}
 
+/* ウエハース　レスポンシブ */
 @media screen and (max-width: 768px){
 	.top .title{width: 30vw;}
-	.top .title-news{width: 30vw;margin-top: -80px;}
-	.top .title-videos{width: 30vw;margin-top: -80px;}
-	.top .title-talent {width: 30vw;margin-top: -80px;}
+	.top .title-news{width: 30vw; margin:auto;margin-bottom: -60px;}
+	.top .title-collabo{width: 30vw;margin-top: -80px;margin-bottom: -60px;}
+	.top .title-videos{width: 30vw;margin-top: -80px;margin-bottom: -60px;}
+	.top .title-talent {width: 30vw;margin-top: -80px; margin-bottom: -40px;}
 }
+
+/* コンテンツ設定 */
 .top .news-area .contents {width: 100%; margin: auto}
-/* .top .news-area .contents:last-child{padding-bottom: 200px;} */
 .top .news-area .contents .img-case {width: 80%; margin: auto; }
 .top .background { 
 	width: 100%; 
@@ -240,10 +240,10 @@ scroll_right ｜右から出現
 }
 /* ---------------------------------------------------------------------------*/ 
 /* スライダー */
-.top .scroll_box{
+.top .scroll_box,.scroll_box_c{
 	background-color: #00000000;
 }
-.scroll_box{
+.scroll_box,.scroll_box_c{
 	background-color: #fff;
     width: 100%;
     display: flex;
@@ -253,14 +253,17 @@ scroll_right ｜右から出現
 	margin-top: 30px;
 	margin-bottom: 50px;
 }
-.scroll_box::-webkit-scrollbar{
+.scroll_box_c{
+	gap: 0px;
+}
+.scroll_box::-webkit-scrollbar,.scroll_box_c::-webkit-scrollbar{
     height: 10px;
     width: 8px;
 }
-.scroll_box::-webkit-scrollbar-track{
+.scroll_box::-webkit-scrollbar-track,.scroll_box_c::-webkit-scrollbar-track{
     background-color: whitesmoke;
 }
-.scroll_box::-webkit-scrollbar-thumb{
+.scroll_box::-webkit-scrollbar-thumb,.scroll_box_c::-webkit-scrollbar-thumb{
     background: linear-gradient(45deg, #68c0ff, #f2ff68, #FF68A3);	/*色*/
 	background-size: 100% 100%;
     border-radius: 50px;
@@ -281,9 +284,15 @@ scroll_right ｜右から出現
 	background-color: #1d1d1d;
 	overflow-y: hidden;
 }
+.item04{position: relative;
+    width: 100px;height: 700px;
+	background-color: #1d1d1d;
+	overflow-y: hidden;
+}
 .chara_bg_01{background:#ffd149}
 
 .item03 p{color: #FFF; writing-mode: vertical-lr; font-size: 3rem; padding: 0; margin: 2px auto 0 15px;}
+.item04 p{color: #FFF; writing-mode: vertical-lr; font-size: 3rem; padding: 0; margin: 2px auto 0 15px;}
 
 .item03 .talent_img{position: absolute; top: 0px; right: 0; height: 100%}
 .talent_img img{object-fit: cover; height: 100%;}
@@ -291,10 +300,16 @@ scroll_right ｜右から出現
 @media screen and (max-width:768px) {
 	.talent_box{padding: 10px;}
 	.item03 p{font-size: 1rem; margin: 0;}
+	.item04 p{font-size: 2rem; margin: 0;}
 	.item03{
-		width: 100px;height: 180px;
+		width: 150px;height: 250px;
+	}
+	.item04{
+		width: 50px;height: 250px;
 	}
 }
+
+/* キャラクター背景 */
 
 .chara_bg_01{background-color:#FFCE6A;}
 .chara_bg_02{background-color:#D83839;}
@@ -304,7 +319,9 @@ scroll_right ｜右から出現
 .chara_bg_06{background-color:#BDD3D6;}
 .chara_bg_07{background-color:#AB4AB4;}
 .chara_bg_08{background-color:#FF9BFF;}
-.chara_bg_09{background-color:#DACBC2;}
+.chara_bg_09{background-color:#dad2c2;}
+.chara_bg_10{background-color:#5f9de3;}
+
 /*メニュー初期設定
 ---------------------------------------------------------------------------*/
 #menubar ul {list-style: none;margin: 0;padding: 0;}
@@ -372,19 +389,6 @@ scroll_right ｜右から出現
 }
 
 
-/*「最近チェックした情報」ブロック
----------------------------------------------------------------------------*/
-#check {
-	background: #f0f0f0;	/*背景色*/
-	padding: 2%;	/*ボックス内余白*/
-}
-
-/*h2見出し*/
-#check h2 {
-	text-align: center;	/*テキストをセンタリング*/
-}
-
-
 /*フッターメニュー設定
 ---------------------------------------------------------------------------*/
 /*ボックス全体の設定*/
@@ -443,7 +447,7 @@ footer a {color: #4c4c4c;text-decoration: none;}
 /*著作部分*/
 footer .pr {display: block;}
 
-/*スライドショー（slickを使用）
+/*スライドショー
 ---------------------------------------------------------------------------*/
 .mainimg {
 	position: relative;
@@ -495,11 +499,11 @@ ul.slick-dots li.slick-active button {
 }
 
 
-/*スライドショーの右下にある「毎日更新中」アイコン
+/*スライドショーの右下にある「ウエハース」アイコン
 ---------------------------------------------------------------------------*/
 #mainimg {position: relative;}
 
-/*「ウエハース」アイコン*/
+/*ヒーローの動いてる「ウエハース」アイコン*/
 .kazari {
 	position: absolute;
 	right: 2%;		/*mainimgブロックの右からの配置場所指定。*/
@@ -631,6 +635,10 @@ input[type="reset"].btn {
 ---------------------------------------------------------------------------*/
 @media screen and (max-width:700px) {
 
+/* スクロールバーの非表示 */
+.scroll_box::-webkit-scrollbar,.scroll_box_c::-webkit-scrollbar{
+	display: none;
+}
 
 /*headerブロック
 ---------------------------------------------------------------------------*/
@@ -725,7 +733,6 @@ ul.submenu:not(.btn) li a:hover {
 
 
 }
-
 
 
 
