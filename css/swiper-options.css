@@ -1,0 +1,44 @@
+.swiper-container {
+  max-width: 90vw !important;
+}
+
+.swiper{
+    width: 90vw !important;
+    margin: auto;
+  }
+
+.swiper2{
+  max-width: 90vw !important;
+  margin: auto;
+  overflow: hidden;
+}
+
+  .swiper-button-prev,
+.swiper-button-next {
+  background-size: 24px 40px; /* 表示したいサイズ */
+  transform: translateY(-50%);
+}
+
+/* 次ページボタンのスタイル */
+.swiper-button-next {
+background-image: url('../images/mark.svg');
+transform: translateY(-50%) scale(-1, 1); /* 左右反転 */
+}
+
+/* 前ページボタンのスタイル */
+.swiper-button-prev {
+  background-image: url('../images/mark.svg');
+  
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  display: none;
+}
+@media  screen and (max-width:768px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    background-image: none;
+  }
+}
+

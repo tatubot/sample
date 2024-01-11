@@ -2,9 +2,6 @@
   if(window.matchMedia('(max-width:767px)').matches){
     //スマホ
     $(window).on('load', function(){
-
-    })
-    $(window).scroll(function () {
       var scrollAnimationElm = document.querySelectorAll('.scroll_up');
       var scrollAnimationFunc = function () {
         for (var i = 0; i < scrollAnimationElm.length; i++) {

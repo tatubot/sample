@@ -80,21 +80,29 @@ a {
 	color: #1b175e;	/*文字色*/
 	text-decoration: none;
 	transition: 0.3s;
+	position: relative;
+}
+a:hover{
+	opacity: 0.5;
 }
 
-a:hover {
-	opacity: 0.7;	/*マウスオン時に70%の透明度にする*/
+.big{
+	opacity: 1;
+	transition: 1s;
 }
-
-
+.big:hover {
+	opacity: 1;
+	transform: scale(1.1);
+	transition: 1s;
+}
+.nonestyle:hover{
+	opacity: 1;
+}
 /*containerブロック（左右のブロックを囲むボックス）
 ---------------------------------------------------------------------------*/
 #container {
 	width: 100%;
 	height: max-content;
-	 /* border: solid red;        ------------------------------------------------------------------- */
-	
-	/* margin: 5% 2%;		上下、左右に空ける余白 */
 }
 
 
@@ -156,18 +164,18 @@ header ul a {
 ---------------------------------------------------------------------------*/
 /* ウエハース */
 .top .title{width: 20vw; margin: 0 auto;}
-.top .title-news{width: 20vw; margin: auto;margin-bottom: -50px;}
-.top .title-collabo {width: 20vw; margin:auto;margin-bottom: -20px;}
-.top .title-videos {width: 20vw; margin:auto;margin-bottom: -30px;}
-.top .title-talent {width: 20vw; margin:auto;margin-bottom: -30px;}
+.top .title-news{width: 20vw; margin: auto;}
+.top .title-collabo {width: 20vw; margin:auto;}
+.top .title-videos {width: 20vw; margin:auto;}
+.top .title-talent {width: 20vw; margin:auto;}
 
 /* ウエハース　レスポンシブ */
 @media screen and (max-width: 768px){
 	.top .title{width: 30vw;}
-	.top .title-news{width: 30vw; margin:auto;margin-bottom: -60px;}
-	.top .title-collabo{width: 30vw;margin-top: -80px;margin-bottom: -60px;}
-	.top .title-videos{width: 30vw;margin-top: -80px;margin-bottom: -60px;}
-	.top .title-talent {width: 30vw;margin-top: -80px; margin-bottom: -40px;}
+	.top .title-news{width: 30vw; }
+	.top .title-collabo{width: 30vw;}
+	.top .title-videos{width: 30vw;}
+	.top .title-talent {width: 30vw;}
 }
 
 /* コンテンツ設定 */
@@ -284,29 +292,37 @@ scroll_right ｜右から出現
 	background-color: #1d1d1d;
 	overflow-y: hidden;
 }
-.item04{position: relative;
-    width: 100px;height: 700px;
+.item04{
+	/* ひつよう！ */
+	position: relative;
+    width: auto;height: 700px;
 	background-color: #1d1d1d;
 	overflow-y: hidden;
-}
+} 
+
 .chara_bg_01{background:#ffd149}
 
 .item03 p{color: #FFF; writing-mode: vertical-lr; font-size: 3rem; padding: 0; margin: 2px auto 0 15px;}
+/* ひつよう！ */
 .item04 p{color: #FFF; writing-mode: vertical-lr; font-size: 3rem; padding: 0; margin: 2px auto 0 15px;}
-
+/* ひつよう！ */
 .item03 .talent_img{position: absolute; top: 0px; right: 0; height: 100%}
 .talent_img img{object-fit: cover; height: 100%;}
 
 @media screen and (max-width:768px) {
 	.talent_box{padding: 10px;}
 	.item03 p{font-size: 1rem; margin: 0;}
+	/* ひつよう！ */
 	.item04 p{font-size: 2rem; margin: 0;}
+	/* ひつよう！ */
 	.item03{
 		width: 150px;height: 250px;
 	}
+	/* ひつよう！ */
 	.item04{
-		width: 50px;height: 250px;
+		width: 150px;height: 250px;
 	}
+	/* ひつよう！ */
 }
 
 /* キャラクター背景 */
@@ -780,3 +796,4 @@ main {
 	display: block;
 	color: rgb(61, 61, 61)000;	/*リンクテキストの文字色*/
 }
+
