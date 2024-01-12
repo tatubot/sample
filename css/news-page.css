@@ -17,17 +17,6 @@
     gap: 30px;
     padding: 20px;
 }
-.scroll_bar::-webkit-scrollbar{
-    height: 10px;
-    width: 8px;
- }
- .scroll_bar::-webkit-scrollbar-track{
-    background-color: whitesmoke;
- }
- .scroll_bar::-webkit-scrollbar-thumb{
-    background-color: #1b175e;
-    border-radius: 50px;
- }
 .item_imgbox02{
     width: 300px;
 }
@@ -42,7 +31,7 @@
     .text-case p{font-size: 0.9em;line-height: 17px;width: 100%;height: auto;margin: 0;}
     .text-case h1{margin-bottom: 40px;text-wrap: nowrap;font-size: 100px;text-align: left;line-height: 0;letter-spacing: -5px;}
     .subcontents .text-case{margin-top: 0px;}
-    .subcontents h1{margin: 0 auto -50px 0;font-size:3rem;}
+    .subcontents h1{margin: 0 auto 0px 0;font-size:3rem;}
     .grid-container{display: flex;}
 
     .news .subcontents{width: 80vw; display: flex; flex-wrap: wrap; justify-content: space-around;margin: 30px auto 0 auto;}

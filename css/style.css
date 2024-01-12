@@ -29,6 +29,7 @@ html,body {
 	font-family: "Helvetica Neue",Helvetica;
 	margin: 0;padding: 0;
 	font-size: 13px;	/*基準となるフォントサイズ。下の方にある「画面幅900px以上」で基準を大きなサイズに再設定しています。*/
+	
 }
 
 body {
@@ -44,6 +45,19 @@ body {
 	height: fit-content;
 	overflow-x: hidden;
 }
+body::-webkit-scrollbar{
+    height: 10px;
+    width: 8px;
+ }
+body::-webkit-scrollbar-track{
+    background-color: whitesmoke;
+ }
+body::-webkit-scrollbar-thumb{
+    background: linear-gradient(45deg, #68c0ff, #f2ff68, #FF68A3);	/*色*/
+	background-size: 100% 100%;
+    border-radius: 50px;
+    border-radius: 50px;
+ }
 
 /*リセット*/
 figure {margin: 0;}
