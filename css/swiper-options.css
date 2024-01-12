@@ -12,6 +12,11 @@
   margin: auto;
   overflow: hidden;
 }
+.swiper2{
+  max-width: 90vw !important;
+  margin: auto;
+  overflow: hidden;
+}
 
   .swiper-button-prev,
 .swiper-button-next {

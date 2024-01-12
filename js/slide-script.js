@@ -60,4 +60,30 @@ window.onload = function () {
   },
 
   });
+  const swiper3 = new Swiper(".swiper3", {
+    speed: 600,
+    spaceBetween: 10,
+    centeredSlides: true,
+    loop: true,
+    autoplay: {
+      delay: 1500, 
+      disableOnInteraction: false, 
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    slidesPerView: 3,
+    breakpoints: {
+      500: {
+          slidesPerView: 4,
+
+      },
+  },
+
+  });
 }
