@@ -58,16 +58,16 @@ window.onload = function () {
 
       },
   },
-
   });
+
   const swiper3 = new Swiper(".swiper3", {
     speed: 600,
-    spaceBetween: 10,
+    spaceBetween: 200,
     centeredSlides: true,
     loop: true,
-    autoplay: {
-      delay: 1500, 
-      disableOnInteraction: false, 
+    autoplay: { // 自動再生
+      delay: 1500, // 1秒後に次のスライド（初期値：3000）
+      disableOnInteraction: false, // 矢印をクリックしても自動再生を止めない
     },
     pagination: {
       el: ".swiper-pagination",
@@ -77,13 +77,37 @@ window.onload = function () {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-    slidesPerView: 3,
+    slidesPerView: 1,
     breakpoints: {
-      500: {
-          slidesPerView: 4,
-
+      786: {
+          slidesPerView: 3,
+          effect: 'coverflow',
       },
   },
+  });
 
+  const swiper4 = new Swiper(".swiper4", {
+    speed: 600,
+    spaceBetween: 0,
+    centeredSlides: true,
+    loop: true,
+    autoplay: { // 自動再生
+      delay: 1500, // 1秒後に次のスライド（初期値：3000）
+      disableOnInteraction: false, // 矢印をクリックしても自動再生を止めない
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    slidesPerView: 1,
+    breakpoints: {
+      786: {
+          slidesPerView: 5,
+      },
+  },
   });
 }
