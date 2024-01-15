@@ -91,9 +91,9 @@ window.onload = function () {
     spaceBetween: 0,
     centeredSlides: true,
     loop: true,
-    autoplay: { // 自動再生
-      delay: 1500, // 1秒後に次のスライド（初期値：3000）
-      disableOnInteraction: false, // 矢印をクリックしても自動再生を止めない
+    autoplay: {
+      delay: 1500, 
+      disableOnInteraction: false, 
     },
     pagination: {
       el: ".swiper-pagination",
@@ -103,10 +103,11 @@ window.onload = function () {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-    slidesPerView: 1,
+    slidesPerView: 3,
     breakpoints: {
-      786: {
-          slidesPerView: 5,
+      500: {
+          slidesPerView: 4,
+
       },
   },
   });
