@@ -14,18 +14,12 @@
   margin: auto;
   overflow: hidden;
 }
-.swiper4{
-  width: 90vw !important;
-  margin: auto;
-}
+
 
   .swiper-button-prev,
 .swiper-button-next {
   background-size: 24px 40px;
   transform: translateY(-50%);
-}
-.swiper4 [class^="swiper-button-"]{
-
 }
 
 /* 次ページボタンのスタイル */
@@ -51,3 +45,19 @@ transform: translateY(-50%) scale(-1, 1); /* 左右反転 */
   }
 }
 
+
+.swiper4{
+  width: 80vw !important;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.swiper-button-next, .swiper-button-prev{
+  position: absolute;
+  top: 50;
+}
+
+.swiper-pagination {
+  bottom: -10px !important;
+}
