@@ -82,7 +82,7 @@ section + section {
 
 @media screen and (max-width: 910px) {
 	.title{margin-left:50px; margin-top: 0; font-size: 40px;}
-	.news .title,.talent .title, .contact .title, .event .title{font-size: 50px; text-align: left;}
+	.news .title,.talent .title, .contact .title, .event .title, .video .title{font-size: 50px; text-align: left;}
 }
 @media screen and (max-width: 425px) {
 	.title{margin-left: 15px;}
@@ -643,20 +643,9 @@ input[type="reset"].btn {
 
 /*その他
 ---------------------------------------------------------------------------*/
-.clear {clear: both;}
-.clearfix::after {content: "";display: block;clear: both;}
-.color-theme, .color-theme a {color: #efa900 !important;}
-.color-check, .color-check a {color: #f00 !important;}
-.c {text-align: center !important;}
-.ws {width: 95%;display: block;}
-.wl {width: 95%;display: block;}
-.mb30 {margin-bottom: 30px !important;}
-.look {display: inline-block;padding: 0px 10px;background: #666; color: #fff; border-radius: 3px;margin: 5px 0; word-break: break-all;}
-.look .color-check {color: #ffcc00 !important;}
-.small {font-size: 0.6em;}
-.large {font-size: 2.5em; letter-spacing: 0.1em;}
-.thumbnail {width: 70px;}
-
+.margin-bottom{
+	margin-bottom: 50px;
+}
 
 
 
