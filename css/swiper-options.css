@@ -47,10 +47,24 @@ transform: translateY(-50%) scale(-1, 1); /* 左右反転 */
 
 
 .swiper4{
-  width: 80vw !important;
+  width: 90vw !important;
   margin: auto;
   position: relative;
   overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .swiper4 {
+    height: 85vw;
+    width: 80%;
+  }
+  .swiper4 .swiper-slide {
+    height: 45%;
+  }
+  .swiper4 .swiper-slide img {
+    height: auto;
+    width: 100%;
+  }
 }
 
 .swiper-button-next, .swiper-button-prev{
@@ -59,5 +73,5 @@ transform: translateY(-50%) scale(-1, 1); /* 左右反転 */
 }
 
 .swiper-pagination {
-  bottom: -10px !important;
+  bottom: -8px !important;
 }

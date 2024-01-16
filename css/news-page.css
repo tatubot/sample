@@ -20,6 +20,9 @@
 .item_imgbox02{
     width: 300px;
 }
+.another-contents{
+    margin: 20px auto;width: 80vw; display: flex; flex-wrap: wrap; justify-content: space-around;
+}
 /* スライダーここまで */
 
 /* 770px以上 */
@@ -37,15 +40,16 @@
     .news .subcontents{width: 80vw; display: flex; flex-wrap: wrap; justify-content: space-around;margin: 30px auto 0 auto;}
     .news .subgrid{width: 20vw; padding: 10px;}
     
-    .news .grid h1{font-size: 80px;}
+    .news .another-contents .grid h1{font-size: 80px;}
 }
 /* 769px以下 */
 @media screen and (max-width:769px){
+    
     .title{margin-bottom: 0px;}
     .text-case{margin-top: 0;}
     .news .top, .news .bottom{width: 90vw;margin: 0px auto 0 auto}
     .news .subcontents{width: 100vw; display: flex; flex-wrap: wrap; justify-content: space-around;}
-    .news .subgrid{width: 40vw;}
+    .news .subgrid{width: 40vw; padding: 5px;}
     .text-case h1{ padding-bottom: 0px;  font-size: 60px;text-align: left;line-height: normal; letter-spacing: -5px;}
 }
 @media screen and (max-width:700px){
