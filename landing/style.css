@@ -1,0 +1,8 @@
+@charset "UTF-8";
+body{width: 100%;margin: 0;padding: 0;}
+img{width: 100%;}
+.moba{display: none;}
+@media  screen and (max-width:768px) {
+    .moba{display: block;}
+    .pc{display: none;}
+}
